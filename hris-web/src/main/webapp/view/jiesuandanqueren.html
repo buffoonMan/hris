@@ -1,0 +1,177 @@
+
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <meta name="author" content="; sekiyika" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="SHORTCUT ICON" href="http://www.baidu.com/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="style/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="style/docs.css" />
+    <link rel="stylesheet" type="text/css" href="style/sidebar.css" />
+    <link rel="stylesheet" type="text/css" href="style/datepicker.css" />
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/bootstrap-datepicker.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+    <title>结算中心 - 结算单确认</title>
+</head>
+<body>
+    <div id="wrapper">
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand"><a href="#">结算中心</a></li>
+                <li><a href="yingfukuanshangjia.html">应付款商家</a></li>
+                <li><a href="yingshoukuanzhifugongsi.html">应收款支付公司</a></li>
+            </ul>
+      </div>
+
+      <div id="page-content-wrapper">
+        <div class="content-header">
+            <h1>结算单确认</h1>
+        </div>
+        <div style="padding: 20px;">
+
+            <form class="form-horizontal" role="form">
+                <div class="form-group">
+                    <label class="col-sm-1 control-label" for="exampleInputEmail2">商家ID</label>
+                    <div class="col-sm-2">
+                        <input type="text" class="form-control" id="exampleInputEmail2" placeholder="商家ID" />
+                    </div>
+                    <button type="button" class="canzhao btn btn-default pull-left" data-value="276">参照</button>
+                    <label class="col-sm-1 control-label">现金账户</label>
+                    <div class="col-sm-2">
+                        <input type="text" class="form-control" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-1 control-label" for="exampleInputEmail2">结算日期</label>
+                    <div class="col-sm-2">
+                        <input type="text" class="form-control date" id="exampleInputEmail2" placeholder="" data-date-format="yyyy-mm-dd"/>
+                    </div>
+                    <button type="button" class="canzhao btn btn-default pull-left" data-value="2014-01-12">参照</button>
+                    <label class="control-label col-sm-1">应付账款</label>
+                    <div class="col-sm-2">
+                        <input type="text" class="form-control" id="exampleInputEmail2" placeholder="" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-1"> </div>
+                    <div class="col-sm-2">
+                        <button type="submit" class="btn btn-default">查询</button>
+                        <button type="submit" class="btn btn-default">导出</button>
+                        <button type="submit" class="btn btn-default">调整</button>
+                        <button type="submit" class="btn btn-default">确认</button>
+                    </div>
+                    
+                </div>
+                
+            </form>
+           
+           <p>应付账款总额（元）：&yen;<em>18900</em></p>
+            <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>选择<br/><input type="checkbox"/></th>
+                    <th>结算单号</th>
+                    <th>商家ID</th>
+                    <th>商家名称</th>
+                    <th>现金账户</th>
+                    <th>结算期间</th>
+                    <th>结算日期</th>
+                    <th>微购代收货款【P】</th>
+                    <th>手续费【H】</th>
+                    <th>微购代退货款【Q】</th>
+                    <th>应付账款【P-H-Q】</th>
+                    <th>结算单状态</th>
+                    <th>操作</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input type="checkbox"/></td>
+                    <td>B2013102100001</td>
+                    <td>商家id</td>
+                    <td>京东商城</td>
+                    <td>XJ001－商家ID</td>
+                    <td>2013-09-1至2013-9-30</td>
+                    <td>2013-10-8</td>
+                    <td>￥20,000</td>
+                    <td>￥100</td>
+                    <td>￥1,000</td>
+                    <td>￥18,900</td>
+                    <td>待确认</td>
+                    <td><a href="#">查看明细</a> <a href="#">明细下载</a></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"/></td>
+                    <td>B2013102100001</td>
+                    <td>商家id</td>
+                    <td>京东商城</td>
+                    <td>XJ001－商家ID</td>
+                    <td>2013-09-1至2013-9-30</td>
+                    <td>2013-10-8</td>
+                    <td>￥20,000</td>
+                    <td>￥100</td>
+                    <td>￥1,000</td>
+                    <td>￥18,900</td>
+                    <td>待确认</td>
+                    <td><a href="#">查看明细</a> <a href="#">明细下载</a></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"/></td>
+                    <td>B2013102100001</td>
+                    <td>商家id</td>
+                    <td>京东商城</td>
+                    <td>XJ001－商家ID</td>
+                    <td>2013-09-1至2013-9-30</td>
+                    <td>2013-10-8</td>
+                    <td>￥20,000</td>
+                    <td>￥100</td>
+                    <td>￥1,000</td>
+                    <td>￥18,900</td>
+                    <td>待确认</td>
+                    <td><a href="#">查看明细</a> <a href="#">明细下载</a></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"/></td>
+                    <td>B2013102100001</td>
+                    <td>商家id</td>
+                    <td>京东商城</td>
+                    <td>XJ001－商家ID</td>
+                    <td>2013-09-1至2013-9-30</td>
+                    <td>2013-10-8</td>
+                    <td>￥20,000</td>
+                    <td>￥100</td>
+                    <td>￥1,000</td>
+                    <td>￥18,900</td>
+                    <td>待确认</td>
+                    <td><a href="#">查看明细</a> <a href="#">明细下载</a></td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="clearfix">
+            <div class="pull-right">
+                <div class=""><div class="pagination-inner"><ul class="pagination">
+
+                    <li class=" active"><a href="/tools/speed/index?">1</a></li>
+                    <li class=""><a href="/tools/speed/index?page_no=2">2</a></li>
+                    <li class=""><a href="/tools/speed/index?page_no=3">3</a></li>
+                    <li class=""><a href="/tools/speed/index?page_no=4">4</a></li>
+                    <li class=""><a href="/tools/speed/index?page_no=5">5</a></li>
+                    <li class=""><a href="/tools/speed/index?page_no=6">6</a></li>
+                    <li class=""><a href="/tools/speed/index?page_no=2">下一页</a></li>
+                </ul></div></div>    </div>
+            </div>
+
+        </div>
+
+        <div class="inset">
+            <hr/>
+            <strong>@Baidu</strong> Email: pengxing@baidu.com
+        </div>
+    </div>
+</div>
+</body>
+</html>

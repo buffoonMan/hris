@@ -1,0 +1,152 @@
+
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <meta name="author" content="; sekiyika" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="SHORTCUT ICON" href="http://www.baidu.com/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="style/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="style/docs.css" />
+    <link rel="stylesheet" type="text/css" href="style/sidebar.css" />
+    <link rel="stylesheet" type="text/css" href="style/datepicker.css" />
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/bootstrap-datepicker.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+    <title>结算中心 - 应付款商家</title>
+</head>
+<body>
+    <div id="wrapper">
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand"><a href="#">结算中心</a></li>
+                <li><a href="yingfukuanshangjia.html">应付款商家</a></li>
+                <li><a href="yingshoukuanzhifugongsi.html">应收款支付公司</a></li>
+            </ul>
+      </div>
+
+      <div id="page-content-wrapper">
+        <div class="content-header">
+            <h1>应付款商家</h1>
+        </div>
+        <div style="padding: 20px;">
+
+            <form class="form-horizontal" role="form">
+                <div class="form-group">
+                    <label class="col-sm-1 control-label" for="exampleInputEmail2">商家ID</label>
+                    <div class="col-sm-2">
+                        <input type="email" class="form-control" id="exampleInputEmail2" placeholder="商家ID" />
+                    </div>
+                    <button type="button col-sm-1" class="canzhao btn btn-default" data-value="276">参照</button>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-1 control-label" for="exampleInputEmail2">结算期间</label>
+                    <div class="col-sm-2">
+                        <input type="email" class="date form-control" id="exampleInputEmail2" placeholder="" data-date-format="yyyy-mm-dd"/>
+                    </div>
+                    <button type="button" class="canzhao btn btn-default pull-left" data-value="2014-01-12">参照</button>
+                    <label class="control-label col-sm-1">至</label>
+                    <div class="col-sm-2">
+                        <input type="email" class="date form-control" id="exampleInputEmail2" placeholder="" data-date-format="yyyy-mm-dd"/>
+                    </div>
+                    <button type="button" class="canzhao btn btn-default pull-left" data-value="2014-01-12">参照</button>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-1"> </div>
+                    <div class="col-sm-2">
+                        <button type="submit" class="btn btn-default">查询</button>
+                        <button type="submit" class="btn btn-default">导出</button>
+                    </div>
+                    
+                </div>
+                
+            </form>
+           
+            <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>序号</th>
+                    <th>商家ID</th>
+                    <th>商家名称</th>
+                    <th>结算期间</th>
+                    <th>现金账户结款金额【P-H-Q】</th>
+                    <th>微购代收货款【P】</th>
+                    <th>手续费【H】</th>
+                    <th>微购代退货款【Q】</th>
+                    <th>微购打款日期</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td></td>
+                    <td>当当</td>
+                    <td>2013-9-1至2013-9-30</td>
+                    <td>￥18,900</td>
+                    <td>￥20,000</td>
+                    <td>￥100</td>
+                    <td>￥1,000</td>
+                    <td>2013-10-10</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td></td>
+                    <td>当当</td>
+                    <td>2013-9-1至2013-9-30</td>
+                    <td>￥18,900</td>
+                    <td>￥20,000</td>
+                    <td>￥100</td>
+                    <td>￥1,000</td>
+                    <td>2013-10-10</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td></td>
+                    <td>当当</td>
+                    <td>2013-9-1至2013-9-30</td>
+                    <td>￥18,900</td>
+                    <td>￥20,000</td>
+                    <td>￥100</td>
+                    <td>￥1,000</td>
+                    <td>2013-10-10</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td></td>
+                    <td>当当</td>
+                    <td>2013-9-1至2013-9-30</td>
+                    <td>￥18,900</td>
+                    <td>￥20,000</td>
+                    <td>￥100</td>
+                    <td>￥1,000</td>
+                    <td>2013-10-10</td>
+                </tr>
+
+            </tbody>
+        </table>
+        <div class="clearfix">
+            <div class="pull-right">
+                <div class=""><div class="pagination-inner"><ul class="pagination">
+
+                    <li class=" active"><a href="/tools/speed/index?">1</a></li>
+                    <li class=""><a href="/tools/speed/index?page_no=2">2</a></li>
+                    <li class=""><a href="/tools/speed/index?page_no=3">3</a></li>
+                    <li class=""><a href="/tools/speed/index?page_no=4">4</a></li>
+                    <li class=""><a href="/tools/speed/index?page_no=5">5</a></li>
+                    <li class=""><a href="/tools/speed/index?page_no=6">6</a></li>
+                    <li class=""><a href="/tools/speed/index?page_no=2">下一页</a></li>
+                </ul></div></div>    </div>
+            </div>
+
+        </div>
+
+        <div class="inset">
+            <hr/>
+            <strong>@Baidu</strong> Email: pengxing@baidu.com
+        </div>
+    </div>
+</div>
+</body>
+</html>

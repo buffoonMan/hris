@@ -1,0 +1,360 @@
+
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <meta name="author" content="; sekiyika" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="SHORTCUT ICON" href="http://www.baidu.com/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="style/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="style/docs.css" />
+    <link rel="stylesheet" type="text/css" href="style/sidebar.css" />
+    <link rel="stylesheet" type="text/css" href="style/datepicker.css" />
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/bootstrap-datepicker.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+    <title>结算中心 - 结算单确认 - 明细下载</title>
+</head>
+<body>
+    <div id="wrapper">
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand"><a href="#">结算中心</a></li>
+                <li><a href="yingfukuanshangjia.html">应付款商家</a></li>
+                <li><a href="yingshoukuanzhifugongsi.html">应收款支付公司</a></li>
+            </ul>
+        </div>
+
+        <div id="page-content-wrapper">
+            <div class="content-header">
+                <h1>结算单确认 - 明细下载</h1>
+            </div>
+            <div style="padding: 20px;">
+
+                <form class="form-horizontal" role="form">
+                    <div class="form-group">
+                        <label class="col-sm-1 control-label" for="exampleInputEmail2">订单号</label>
+                        <div class="col-sm-2">
+                            <input type="text" class="form-control" id="exampleInputEmail2" placeholder="商家ID" />
+                        </div>
+                        <button type="button" class="canzhao btn btn-default pull-left invisible">参照</button>
+                        <label class="col-sm-1 control-label">订单金额（元）</label>
+                        <div class="col-sm-2">
+                            <input type="text" class="form-control" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-1 control-label" for="exampleInputEmail2">支付完成时间</label>
+                        <div class="col-sm-2">
+                            <input type="text" class="date form-control" id="exampleInputEmail2" placeholder="" data-date-format="yyyy-mm-dd"/>
+                        </div>
+                        <button type="button" class="canzhao btn btn-default pull-left" data-value="2014-01-12">参照</button>
+                        <label class="control-label col-sm-1">至</label>
+                        <div class="col-sm-2">
+                            <input type="text" class="form-control date" id="exampleInputEmail2" placeholder="" data-date-format="yyyy-mm-dd"/>
+                        </div>
+                        <button type="button" class="canzhao btn btn-default pull-left" data-value="2014-01-12">参照</button>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-1 control-label" for="exampleInputEmail2">确认收货时间</label>
+                        <div class="col-sm-2">
+                            <input type="text" class="form-control date" id="exampleInputEmail2" placeholder="" data-date-format="yyyy-mm-dd"/>
+                        </div>
+                        <button type="button" class="btn btn-default pull-left">参照</button>
+                        <label class="control-label col-sm-1">至</label>
+                        <div class="col-sm-2">
+                            <input type="text" class="form-control date" id="exampleInputEmail2" placeholder="" data-date-format="yyyy-mm-dd"/>
+                        </div>
+                        <button type="button" class="btn btn-default pull-left">参照</button>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-1"> </div>
+                        <div class="col-sm-2">
+                            <button type="submit" class="btn btn-default">查询</button>
+                        </div>
+
+                    </div>
+
+                </form>
+
+                <p>微购代收货款（元）：&yen;<em>20000</em></p>
+                <p>结算订单：2单      订单总支付金额（元）：&yen;<em>20,000</em></p>
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>序号</th>
+                            <th>订单号</th>
+                            <th>商家名称</th>
+                            <th>商品名称</th>
+                            <th>支付方式</th>
+                            <th>支付金额</th>
+                            <th>退款金额</th>
+                            <th>手续费</th>
+                            <th>退款单号</th>
+                            <th>支付完成时间</th>
+                            <th>确认收货日期</th>
+                            <th>用户申请退款日期</th>
+                            <th>退款状态</th>
+                            <th>商家审批日期</th>
+                            <th>订单状态</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>001</td>
+                            <td>京东</td>
+                            <td>iphone5手机...</td>
+                            <td>百付宝</td>
+                            <td>￥5,000</td>
+                            <td>￥5,000</td>
+                            <td>￥0.00</td>
+                            <td>00001，00002</td>
+                            <td>2013-9-2</td>
+                            <td>2013-9-8</td>
+                            <td></td>
+                            <td>待商家审核</td>
+                            <td></td>
+                            <td>待确认</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>001</td>
+                            <td>京东</td>
+                            <td>iphone5手机...</td>
+                            <td>百付宝</td>
+                            <td>￥5,000</td>
+                            <td>￥5,000</td>
+                            <td>￥0.00</td>
+                            <td>00001，00002</td>
+                            <td>2013-9-2</td>
+                            <td>2013-9-8</td>
+                            <td></td>
+                            <td>待商家审核</td>
+                            <td></td>
+                            <td>待确认</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>001</td>
+                            <td>京东</td>
+                            <td>iphone5手机...</td>
+                            <td>百付宝</td>
+                            <td>￥5,000</td>
+                            <td>￥5,000</td>
+                            <td>￥0.00</td>
+                            <td>00001，00002</td>
+                            <td>2013-9-2</td>
+                            <td>2013-9-8</td>
+                            <td></td>
+                            <td>待商家审核</td>
+                            <td></td>
+                            <td>待确认</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>001</td>
+                            <td>京东</td>
+                            <td>iphone5手机...</td>
+                            <td>百付宝</td>
+                            <td>￥5,000</td>
+                            <td>￥5,000</td>
+                            <td>￥0.00</td>
+                            <td>00001，00002</td>
+                            <td>2013-9-2</td>
+                            <td>2013-9-8</td>
+                            <td></td>
+                            <td>待商家审核</td>
+                            <td></td>
+                            <td>待确认</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>说明：</p>
+                <ol>
+                    <li>明细中的隐含条件有：结算日期10.8，商家为京东；</li>
+                    <li>“手续费”明细，需要注意的是如果订单发生了退款申请商家未拒则手续费需要做正、逆向冲抵后显示；</li>
+                    <li>退款审核状态包括：待卖家确认，卖家同意退款，退款成功</li>
+                </ol>
+                <div class="clearfix">
+                    <div class="pull-right">
+                        <div class=""><div class="pagination-inner"><ul class="pagination">
+
+                            <li class=" active"><a href="/tools/speed/index?">1</a></li>
+                            <li class=""><a href="/tools/speed/index?page_no=2">2</a></li>
+                            <li class=""><a href="/tools/speed/index?page_no=3">3</a></li>
+                            <li class=""><a href="/tools/speed/index?page_no=4">4</a></li>
+                            <li class=""><a href="/tools/speed/index?page_no=5">5</a></li>
+                            <li class=""><a href="/tools/speed/index?page_no=6">6</a></li>
+                            <li class=""><a href="/tools/speed/index?page_no=2">下一页</a></li>
+                        </ul></div></div>
+                    </div>
+                </div>
+
+                <form class="form-horizontal" role="form">
+                    <div class="form-group">
+                        <label class="col-sm-1 control-label" for="exampleInputEmail2">订单号</label>
+                        <div class="col-sm-2">
+                            <input type="text" class="form-control" id="exampleInputEmail2" placeholder="商家ID" />
+                        </div>
+                        <button type="button" class="btn btn-default pull-left invisible">参照</button>
+                        <label class="col-sm-1 control-label">订单金额（元）</label>
+                        <div class="col-sm-2">
+                            <input type="text" class="form-control" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-1 control-label" for="exampleInputEmail2">支付完成时间</label>
+                        <div class="col-sm-2">
+                            <input type="text" class="form-control" id="exampleInputEmail2" placeholder="" />
+                        </div>
+                        <button type="button" class="btn btn-default pull-left">参照</button>
+                        <label class="control-label col-sm-1">至</label>
+                        <div class="col-sm-2">
+                            <input type="text" class="form-control" id="exampleInputEmail2" placeholder="" />
+                        </div>
+                        <button type="button" class="btn btn-default pull-left">参照</button>
+                    </div>
+                </form>
+
+                <p>
+                    <tabel>
+                        <tr><td>商家：京东</td><td>手续费：&yen;30</td></tr>
+                        <tr><td>结算订单：3000单</td><td>订单总支付金额（元）：&yen;2000</td></tr>
+                    </table>
+                </p>
+                <h3>手续费</h3>
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>序号</th>
+                            <th>订单号</th>
+                            <th>商品名称</th>
+                            <th>支付方式</th>
+                            <th>支付金额</th>
+                            <th>退款金额</th>
+                            <th>手续费</th>
+                            <th>支付完成时间</th>
+                            <th>确认收货日期</th>
+                            <th>订单状态</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>001</td>
+                            <td>iphone5手机...</td>
+                            <td>百付宝</td>
+                            <td>￥5,000</td>
+                            <td>￥5,000</td>
+                            <td>￥0.00</td>
+                            <td>00001，00002</td>
+                            <td>2013-9-2</td>
+                            <td>待确认</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>001</td>
+                            <td>iphone5手机...</td>
+                            <td>百付宝</td>
+                            <td>￥5,000</td>
+                            <td>￥5,000</td>
+                            <td>￥0.00</td>
+                            <td>00001，00002</td>
+                            <td>2013-9-2</td>
+                            <td>待确认</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <form class="form-horizontal" role="form">
+                    <div class="form-group">
+                        <label class="col-sm-1 control-label" for="exampleInputEmail2">订单号</label>
+                        <div class="col-sm-2">
+                            <input type="text" class="form-control" id="exampleInputEmail2" placeholder="商家ID" />
+                        </div>
+                        <button type="button" class="btn btn-default pull-left invisible">参照</button>
+                        <label class="col-sm-1 control-label">订单金额（元）</label>
+                        <div class="col-sm-2">
+                            <input type="text" class="form-control" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-1 control-label" for="exampleInputEmail2">支付完成时间</label>
+                        <div class="col-sm-2">
+                            <input type="text" class="form-control" id="exampleInputEmail2" placeholder="" />
+                        </div>
+                        <button type="button" class="btn btn-default pull-left">参照</button>
+                        <label class="control-label col-sm-1">至</label>
+                        <div class="col-sm-2">
+                            <input type="text" class="form-control" id="exampleInputEmail2" placeholder="" />
+                        </div>
+                        <button type="button" class="btn btn-default pull-left">参照</button>
+                    </div>
+                </form>
+
+                <p>
+                    <tabel>
+                        <tr><td>商家：京东</td><td>微购代退金额：&yen;30</td></tr>
+                        <tr><td>结算订单：3000单</td><td>订单总支付金额（元）：&yen;2000</td></tr>
+                    </table>
+                </p>
+                <h3>微购代退货款</h3>
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>序号</th>
+                            <th>订单号</th>
+                            <th>商品名称</th>
+                            <th>支付方式</th>
+                            <th>支付金额</th>
+                            <th>退款单号</th>
+                            <th>微购代退货款</th>
+                            <th>支付完成时间</th>
+                            <th>申请退款日期</th>
+                            <th>商家审批日期</th>
+                            <th>订单状态</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>001</td>
+                            <td>iphone5手机...</td>
+                            <td>百付宝</td>
+                            <td>￥5,000</td>
+                            <td></td>
+                            <td>￥0.00</td>
+                            <td>2013-9-2</td>
+                            <td>2013-9-2</td>
+                            <td>2013-9-8</td>
+                            <td>待确认</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>001</td>
+                            <td>iphone5手机...</td>
+                            <td>百付宝</td>
+                            <td>￥5,000</td>
+                            <td></td>
+                            <td>￥0.00</td>
+                            <td>2013-9-2</td>
+                            <td>2013-9-2</td>
+                            <td>2013-9-8</td>
+                            <td>待确认</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+
+            </div>
+            <div class="inset">
+                <hr/>
+                <strong>@Baidu</strong> Email: pengxing@baidu.com
+            </div>
+        </div>
+    </div>
+</body>
+</html>

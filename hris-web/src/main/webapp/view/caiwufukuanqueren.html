@@ -1,0 +1,166 @@
+
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <meta name="author" content="; sekiyika" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="SHORTCUT ICON" href="http://www.baidu.com/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="style/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="style/docs.css" />
+    <link rel="stylesheet" type="text/css" href="style/sidebar.css" />
+    <link rel="stylesheet" type="text/css" href="style/datepicker.css" />
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/bootstrap-datepicker.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+    <title>结算中心 - 财务付款确认</title>
+</head>
+<body>
+    <div id="wrapper">
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand"><a href="#">结算中心</a></li>
+                <li><a href="yingfukuanshangjia.html">应付款商家</a></li>
+                <li><a href="yingshoukuanzhifugongsi.html">应收款支付公司</a></li>
+            </ul>
+        </div>
+
+        <div id="page-content-wrapper">
+            <div class="content-header">
+                <h1>财务付款确认</h1>
+            </div>
+            <div style="padding: 20px;">
+
+                <form class="form-horizontal" role="form">
+                    <div class="form-group">
+                        <label class="col-sm-1 control-label" for="exampleInputEmail2">商家ID</label>
+                        <div class="col-sm-2">
+                            <input type="text" class="form-control" id="exampleInputEmail2" placeholder="商家ID" />
+                        </div>
+                        <button type="button" class="canzhao btn btn-default pull-left" data-value="276">参照</button>
+                        <label class="col-sm-1 control-label">银行名称</label>
+                        <div class="col-sm-2">
+                            <select class="form-control">
+                                <option value="中国银行">中国银行</option>
+                                <option value="中国银行">中国银行</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-1"> </div>
+                        <div class="col-sm-2">
+                            <button type="submit" class="btn btn-default">查询</button>
+                            <button type="submit" class="btn btn-default">导出</button>
+                            <button type="submit" class="btn btn-default">确认支付</button>
+                        </div>
+
+                    </div>
+
+                </form>
+
+                <p>应付账款总额（元）：&yen;<em>18900</em></p>
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>选择<br/><input type="checkbox"/></th>
+                            <th>付款单号</th>
+                            <th>商家ID</th>
+                            <th>商家名称</th>
+                            <th>结算单号</th>
+                            <th>结算期间</th>
+                            <th>应付账款</th>
+                            <th>收款人姓名</th>
+                            <th>银行名称</th>
+                            <th>银行卡号</th>
+                            <th>开户支行名称</th>
+                            <th>省</th>
+                            <th>市</th>
+                            <th>结算单状态</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input type="checkbox"/></td>
+                            <td>P001</td>
+                            <td>商家id</td>
+                            <td>京东商城</td>
+                            <td>B2013102100001</td>
+                            <td>2013-09-1至2013-9-30</td>
+                            <td>￥20,000</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>待支付</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"/></td>
+                            <td>P001</td>
+                            <td>商家id</td>
+                            <td>京东商城</td>
+                            <td>B2013102100001</td>
+                            <td>2013-09-1至2013-9-30</td>
+                            <td>￥20,000</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>待支付</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"/></td>
+                            <td>P001</td>
+                            <td>商家id</td>
+                            <td>京东商城</td>
+                            <td>B2013102100001</td>
+                            <td>2013-09-1至2013-9-30</td>
+                            <td>￥20,000</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>待支付</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"/></td>
+                            <td>P001</td>
+                            <td>商家id</td>
+                            <td>京东商城</td>
+                            <td>B2013102100001</td>
+                            <td>2013-09-1至2013-9-30</td>
+                            <td>￥20,000</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>待支付</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <p>
+                    说明：商家的收款人姓名、银行名称、银行卡号、开户支行名称、省、市项从“运营平台”的货款协议中获取；
+                </p>
+
+                <button type="button" class="btn btn-primary">您确认已经在网银完成对商家的付款了吗？</button>
+
+            </div>
+
+            <div class="inset">
+                <hr/>
+                <strong>@Baidu</strong> Email: pengxing@baidu.com
+            </div>
+        </div>
+    </div>
+</body>
+</html>

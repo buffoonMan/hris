@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="war" name="hris-web:war">
-    <output-path>$PROJECT_DIR$/hris-web/target</output-path>
-    <root id="archive" name="hris-web.war">
-      <element id="artifact" artifact-name="hris-web:war exploded" />
-    </root>
-  </artifact>
-</component>

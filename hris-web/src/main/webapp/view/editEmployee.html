@@ -13,28 +13,28 @@
     <script type="text/javascript" src="js/bootstrap.js"></script>
     <script type="text/javascript" src="js/bootstrap-datepicker.js"></script>
     <script type="text/javascript" src="js/common.js"></script>
-    <title>员工信息 - 添加</title>
+    <title>员工信息 - 修改</title>
 </head>
 <body>
     <div id="wrapper">
         <!-- Sidebar -->
         <div id="sidebar-wrapper">
             <ul class="sidebar-nav">
-                <li class="sidebar-brand"><a href="#">员工信息</a></li>
+                <li class="sidebar-brand"><a href="#">结算中心</a></li>
                 <li>
+                    <a href="yingfukuanshangjia.html">应付款商家</a>
                     <ul class="sidebar-subnav">
-                        <li><a href="queryEmployee.html">查询员工信息</a></li>
-						<li><a href="addEmployee.html">添加员工信息</a></li>
-						<li><a href="addEmployee2.html">添加员工信息（Excel）</a></li>
-						<li><a href="dimissionEmployee.html">员工离职</a></li>
+                        <li><a href="#">添加应付款商家</a></li>
+                        <li><a href="#">修改应付款商家</a></li>
                     </ul>
                 </li>
+                <li><a href="yingshoukuanzhifugongsi.html">应收款支付公司</a></li>
             </ul>
 		</div>
 		
         <div id="page-content-wrapper">
             <div class="content-header">
-                <h1>员工信息 - 添加</h1>
+                <h1>员工信息 - 修改</h1>
             </div>
             <div style="padding: 20px;">
 
@@ -42,18 +42,18 @@
                     <div class="form-group">
                         <label class="col-sm-1 control-label" for="exampleInputEmail2">员工姓名 <font color="red">*</font></label>
                         <div class="col-sm-2">
-                            <input type="text" class="form-control" id="exampleInputEmail2" placeholder="员工姓名" />
+                            <input type="text" class="form-control" id="exampleInputEmail2" placeholder="员工姓名" value="史唯实" />
                         </div>
                         <button type="button" class="canzhao btn btn-default pull-left invisible">今天</button>
                         <label class="col-sm-1 control-label">身份证号码 <font color="red">*</font></label>
                         <div class="col-sm-2">
-                            <input type="text" class="form-control" placeholder="身份证号码"  />
+                            <input type="text" class="form-control" placeholder="身份证号码" value="6106221213432321" />
                         </div>
                     </div>
 					<div class="form-group">
                         <label class="col-sm-1 control-label" for="exampleInputEmail2">所在公司工号 <font color="red">*</font></label>
                         <div class="col-sm-2">
-                            <input type="text" class="form-control" id="exampleInputEmail2" placeholder="所在公司工号" />
+                            <input type="text" class="form-control" id="exampleInputEmail2" placeholder="所在公司工号" value="facewin" />
                         </div>
                         <button type="button" class="canzhao btn btn-default pull-left invisible">今天</button>
                         <label class="col-sm-1 control-label">所属一级商户 <font color="red">*</font></label>
@@ -224,7 +224,7 @@
                     <div class="form-group">
                         <div class="col-sm-1"> </div>
                         <div class="col-sm-2">
-							<button type="submit" class="btn btn-primary"> 添加员工 </button>
+							<button type="submit" class="btn btn-primary"> 保  存 </button>
                         </div>
                     </div>
                 </form>

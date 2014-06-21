@@ -14,7 +14,7 @@
     <script type="text/javascript" src="js/bootstrap.js"></script>
     <script type="text/javascript" src="js/bootstrap-datepicker.js"></script>
     <script type="text/javascript" src="js/common.js"></script>
-    <title>结算中心 - test</title>
+    <title>商户信息 - 添加</title>
 </head>
 <body>
     <div id="wrapper">
@@ -22,11 +22,13 @@
         <div id="sidebar-wrapper">
             <ul class="sidebar-nav">
                 <li class="sidebar-brand"><a href="#">商户管理</a></li>
-                <li><a href="yingfukuanshangjia.html">五险一金帐套维护</a></li>
-                <li><a href="yingshoukuanzhifugongsi.html">人事管理</a></li>
-                <li><a href="shangjiajiesuanzhanghuchaxun.html">薪资绩效管理</a></li>
-                <li><a href="jiesuandanqueren.html">财务对账</a></li>
-				<li><a href="jiesuandanqueren.html">退出登录</a></li>
+                <li>
+                    <ul class="sidebar-subnav">
+                        <li><a href="holderQuerry.html">查询商户信息</a></li>
+                        <li><a href="addNewHolder.html">添加商户信息</a></li>
+                        <li><a href="improtNewHolder.html">添加商户信息（Excel）</a></li>
+                    </ul>
+                </li>
             </ul>
         </div>
 
@@ -93,7 +95,7 @@
 		
 		
 						<label class="col-sm-1 control-label" for="stype">服务类别</label>
-							<div class="col-sm-1">          			
+							<div class="col-sm-2">          			
                         
                         
                             <select type="text" class="form-control " id="stype" placeholder="服务类别" >
@@ -118,41 +120,16 @@
 						
 						
                         <label class="col-sm-1  control-label" for="smount">服务费价格</label>
-                        	 <div class="col-sm-2"> 
-                            <input type="text" class="form-control" id="smount" placeholder="服务费价格" />
-                        
-						
-</div>
+                        	<div class="col-sm-2"> 
+								<input type="text" class="form-control" id="smount" placeholder="服务费价格" />
+							</div>
 			</div>	
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-		
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
              </form>
-<div class="form-group">
-<div class="col-sm-6"> 
+		<div class="form-group">
+		<div class="col-sm-6"> 
                 <button type="button" class="btn btn-primary">保存</button>
 				
-                <button type="button"  class="btn btn-danger">取消</button>
+                <button type="button"  class="btn btn-danger">重置</button>
             </div>
 </div>
             <div class="inset">

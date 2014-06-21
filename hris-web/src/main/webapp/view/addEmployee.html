@@ -2,13 +2,13 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
-    <meta name="author" content="; sekiyika" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="; sekiyika"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <link rel="SHORTCUT ICON" href="http://www.baidu.com/favicon.ico">
-    <link rel="stylesheet" type="text/css" href="style/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="style/docs.css" />
-    <link rel="stylesheet" type="text/css" href="style/sidebar.css" />
-    <link rel="stylesheet" type="text/css" href="style/datepicker.css" />
+    <link rel="stylesheet" type="text/css" href="style/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="style/docs.css"/>
+    <link rel="stylesheet" type="text/css" href="style/sidebar.css"/>
+    <link rel="stylesheet" type="text/css" href="style/datepicker.css"/>
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/bootstrap.js"></script>
     <script type="text/javascript" src="js/bootstrap-datepicker.js"></script>
@@ -16,224 +16,258 @@
     <title>员工信息 - 添加</title>
 </head>
 <body>
-    <div id="wrapper">
-        <!-- Sidebar -->
-        <div id="sidebar-wrapper">
-            <ul class="sidebar-nav">
-                <li class="sidebar-brand"><a href="#">员工信息</a></li>
-                <li>
-                    <ul class="sidebar-subnav">
-                        <li><a href="queryEmployee.html">查询员工信息</a></li>
-						<li><a href="addEmployee.html">添加员工信息</a></li>
-						<li><a href="addEmployee2.html">添加员工信息（Excel）</a></li>
-						<li><a href="dimissionEmployee.html">员工离职</a></li>
-                    </ul>
-                </li>
+<div id="wrapper">
+<!-- Sidebar -->
+<div id="sidebar-wrapper">
+    <ul class="sidebar-nav">
+        <li class="sidebar-brand"><a href="#">员工信息</a></li>
+        <li>
+            <ul class="sidebar-subnav">
+                <li><a href="queryEmployee.html">查询员工信息</a></li>
+                <li><a href="addEmployee.html">添加员工信息</a></li>
+                <li><a href="importEmployee.html">添加员工信息（Excel）</a></li>
+                <li><a href="dimissionEmployee.html">员工离职</a></li>
             </ul>
-		</div>
-		
-        <div id="page-content-wrapper">
-            <div class="content-header">
-                <h1>员工信息 - 添加</h1>
-            </div>
-            <div style="padding: 20px;">
+        </li>
+    </ul>
+</div>
 
-                <form class="form-horizontal" role="form">
-                    <div class="form-group">
-                        <label class="col-sm-1 control-label" for="exampleInputEmail2">员工姓名 <font color="red">*</font></label>
-                        <div class="col-sm-2">
-                            <input type="text" class="form-control" id="exampleInputEmail2" placeholder="员工姓名" />
-                        </div>
-                        <button type="button" class="canzhao btn btn-default pull-left invisible">今天</button>
-                        <label class="col-sm-1 control-label">身份证号码 <font color="red">*</font></label>
-                        <div class="col-sm-2">
-                            <input type="text" class="form-control" placeholder="身份证号码"  />
-                        </div>
-                    </div>
-					<div class="form-group">
-                        <label class="col-sm-1 control-label" for="exampleInputEmail2">所在公司工号 <font color="red">*</font></label>
-                        <div class="col-sm-2">
-                            <input type="text" class="form-control" id="exampleInputEmail2" placeholder="所在公司工号" />
-                        </div>
-                        <button type="button" class="canzhao btn btn-default pull-left invisible">今天</button>
-                        <label class="col-sm-1 control-label">所属一级商户 <font color="red">*</font></label>
-                        <div class="col-sm-2">
-                            <select class="form-control">
-                                <option value="韵达">韵达</option>
-                                <option value="爱茵美">爱茵美</option>
-                            </select>
-                        </div>
-                    </div>
-					<div class="form-group">
-                        <label class="col-sm-1 control-label">所属二级商户 <font color="red">*</font></label>
-                        <div class="col-sm-2">
-                            <select class="form-control">
-								<option value="">无</option>
-                                <option value="韵达上海">韵达上海</option>
-                                <option value="爱茵美上海">爱茵美上海</option>
-                            </select>
-                        </div>
-                        <button type="button" class="canzhao btn btn-default pull-left invisible">今天</button>
-                        <label class="col-sm-1 control-label">所属三级商户 <font color="red">*</font></label>
-                        <div class="col-sm-2">
-                            <select class="form-control">
-								<option value="">无</option>
-                                <option value="韵达上海一部">韵达上海一部</option>
-                                <option value="爱茵美上海一部">爱茵美上海一部</option>
-                            </select>
-                        </div>
-                    </div>
-					
-                    <div class="form-group">
-                        <label class="col-sm-1 control-label" for="exampleInputEmail2">性别 <font color="red">*</font></label>
-                        <div class="col-sm-2">
-                            <select class="form-control">
-                                <option value="男">男</option>
-                                <option value="女">女</option>
-                            </select>
-                        </div>
-                        <button type="button" class="canzhao btn btn-default pull-left invisible" data-value="2014-01-12">今天</button>
-                        <label class="control-label col-sm-1">出生日期 <font color="red">*</font></label>
-                        <div class="col-sm-2">
-                            <input type="text" class="form-control date" id="exampleInputEmail2" placeholder="" data-date-format="yyyy-mm-dd"/>
-                        </div>
-                        <button type="button" class="canzhao btn btn-default pull-left invisible" data-value="2014-01-12">今天</button>
-                    </div>
-                    <div class="form-group">
-                        <label class="col-sm-1 control-label" for="exampleInputEmail2">合同起始时间 <font color="red">*</font></label>
-                        <div class="col-sm-2">
-                            <input type="text" class="form-control date" id="exampleInputEmail2" placeholder="" data-date-format="yyyy-mm-dd"/>
-                        </div>
-                        <button type="button" class="canzhao btn btn-default pull-left invisible">今天</button>
-                        <label class="control-label col-sm-1">合同到期时间 <font color="red">*</font></label>
-                        <div class="col-sm-2">
-                            <input type="text" class="form-control date" id="exampleInputEmail2" placeholder="" data-date-format="yyyy-mm-dd"/>
-                        </div>
-                    </div>
-					<div class="form-group">
-                        <label class="col-sm-1 control-label" for="exampleInputEmail2">社保参保时间 <font color="red">*</font></label>
-                        <div class="col-sm-2">
-                            <input type="text" class="form-control date" id="exampleInputEmail2" placeholder="" data-date-format="yyyy-mm-dd"/>
-                        </div>
-                        <button type="button" class="canzhao btn btn-default pull-left invisible">今天</button>
-                        <label class="control-label col-sm-1">社保停保时间 <font color="red">*</font></label>
-                        <div class="col-sm-2">
-                            <input type="text" class="form-control date" id="exampleInputEmail2" placeholder="" data-date-format="yyyy-mm-dd"/>
-                        </div>
-                    </div>
-					
-					<div class="form-group">
-                        <label class="col-sm-1 control-label" for="exampleInputEmail2">养老基数 <font color="red">*</font></label>
-                        <div class="col-sm-2">
-                            <input type="text" class="form-control" placeholder="养老基数"  />
-                        </div>
-                        <button type="button" class="canzhao btn btn-default pull-left invisible">今天</button>
-                        <label class="col-sm-1 control-label" for="exampleInputEmail2">医疗基数 <font color="red">*</font></label>
-                        <div class="col-sm-2">
-                            <input type="text" class="form-control" placeholder="医疗基数"  />
-                        </div>
-                    </div>
-					
-					<div class="form-group">
-                        <label class="col-sm-1 control-label" for="exampleInputEmail2">失业基数 <font color="red">*</font></label>
-                        <div class="col-sm-2">
-                            <input type="text" class="form-control" placeholder="失业基数"  />
-                        </div>
-                        <button type="button" class="canzhao btn btn-default pull-left invisible">今天</button>
-                        <label class="col-sm-1 control-label" for="exampleInputEmail2">工伤基数 <font color="red">*</font></label>
-                        <div class="col-sm-2">
-                            <input type="text" class="form-control" placeholder="工伤基数"  />
-                        </div>
-                    </div>
-					
-					<div class="form-group">
-                        <label class="col-sm-1 control-label" for="exampleInputEmail2">生育基数 <font color="red">*</font></label>
-                        <div class="col-sm-2">
-                            <input type="text" class="form-control" placeholder="生育基数"  />
-                        </div>
-                        <button type="button" class="canzhao btn btn-default pull-left invisible">今天</button>
-                        <label class="col-sm-1 control-label" for="exampleInputEmail2">大病基数 <font color="red">*</font></label>
-                        <div class="col-sm-2">
-                            <input type="text" class="form-control" placeholder="大病基数"  />
-                        </div>
-						<label class="col-sm-1 control-label" for="exampleInputEmail2">公积金基数 <font color="red">*</font></label>
-                        <div class="col-sm-2">
-                            <input type="text" class="form-control" placeholder="公积金基数"  />
-                        </div>
-                    </div>
-					
-					<div class="form-group">
-                       <label class="col-sm-1 control-label">缴纳城市 <font color="red">*</font></label>
-                        <div class="col-sm-2">
-                            <select class="form-control">
-                                <option value="北京">北京</option>
-                                <option value="上海">上海</option>
-                            </select>
-                        </div>
-                        <button type="button" class="canzhao btn btn-default pull-left invisible">今天</button>
-                        <label class="col-sm-1 control-label" for="exampleInputEmail2">保险帐套 <font color="red">*</font></label>
-                        <div class="col-sm-2">
-                             <select class="form-control">
-                                <option value="北京三险">北京三险</option>
-								<option value="北京五险">北京五险</option>
-                                <option value="上海三险">上海三险</option>
-								<option value="北京五险">北京五险</option>
-                            </select>
-                        </div>
-                    </div>
-					
-					<div class="form-group">
-                       <label class="col-sm-1 control-label">学历</label>
-                        <div class="col-sm-2">
-                            <select class="form-control">
-                                <option value="硕士">硕士</option>
-                                <option value="博士">博士</option>
-                            </select>
-                        </div>
-                        <button type="button" class="canzhao btn btn-default pull-left invisible">今天</button>
-                        <label class="col-sm-1 control-label" for="exampleInputEmail2">部门</label>
-                        <div class="col-sm-2">
-                            <input type="text" class="form-control" placeholder="所在部门"  />
-                        </div>
-                    </div>
-					
-					<div class="form-group">
-                       <label class="col-sm-1 control-label" for="exampleInputEmail2">成本中心</label>
-                        <div class="col-sm-2">
-                            <input type="text" class="form-control" placeholder="成本中心"  />
-                        </div>
-                        <button type="button" class="canzhao btn btn-default pull-left invisible">今天</button>
-                        <label class="col-sm-1 control-label" for="exampleInputEmail2">手机号</label>
-                        <div class="col-sm-2">
-                            <input type="text" class="form-control" placeholder="手机号"  />
-                        </div>
-                    </div>
-					
-					<div class="form-group">
-                       <label class="col-sm-1 control-label" for="exampleInputEmail2">QQ号</label>
-                        <div class="col-sm-2">
-                            <input type="text" class="form-control" placeholder="QQ号"  />
-                        </div>
-                        <button type="button" class="canzhao btn btn-default pull-left invisible">今天</button>
-                        <label class="col-sm-1 control-label" for="exampleInputEmail2">户籍地址</label>
-                        <div class="col-sm-2">
-                            <input type="text" class="form-control" placeholder="户籍地址"  />
-                        </div>
-                    </div>
-					
-                    <div class="form-group">
-                        <div class="col-sm-1"> </div>
-                        <div class="col-sm-2">
-							<button type="submit" class="btn btn-primary"> 添加员工 </button>
-                        </div>
-                    </div>
-                </form>
-            </div>
-            <div class="inset">
-                <hr/>
-                <strong>@Facewin</strong> Email: Facewin@facewin.com
-            </div>
-        </div>
+<div id="page-content-wrapper">
+<div class="content-header">
+    <h1>员工信息 - 添加</h1>
+</div>
+<div style="padding: 20px;">
+
+<form class="form-horizontal" role="form">
+<div class="form-group">
+    <label class="col-sm-1 control-label" for="exampleInputEmail2">员工姓名 <font color="red">*</font></label>
+
+    <div class="col-sm-2">
+        <input type="text" class="form-control" id="exampleInputEmail2" placeholder="员工姓名"/>
     </div>
+    <button type="button" class="canzhao btn btn-default pull-left invisible">今天</button>
+    <label class="col-sm-1 control-label">身份证号码 <font color="red">*</font></label>
+
+    <div class="col-sm-2">
+        <input type="text" class="form-control" placeholder="身份证号码"/>
+    </div>
+</div>
+<div class="form-group">
+    <label class="col-sm-1 control-label" for="exampleInputEmail2">所在公司工号 <font color="red">*</font></label>
+
+    <div class="col-sm-2">
+        <input type="text" class="form-control" id="exampleInputEmail2" placeholder="所在公司工号"/>
+    </div>
+    <button type="button" class="canzhao btn btn-default pull-left invisible">今天</button>
+    <label class="col-sm-1 control-label">所属一级商户 <font color="red">*</font></label>
+
+    <div class="col-sm-2">
+        <select class="form-control">
+            <option value="韵达">韵达</option>
+            <option value="爱茵美">爱茵美</option>
+        </select>
+    </div>
+</div>
+<div class="form-group">
+    <label class="col-sm-1 control-label">所属二级商户 <font color="red">*</font></label>
+
+    <div class="col-sm-2">
+        <select class="form-control">
+            <option value="">无</option>
+            <option value="韵达上海">韵达上海</option>
+            <option value="爱茵美上海">爱茵美上海</option>
+        </select>
+    </div>
+    <button type="button" class="canzhao btn btn-default pull-left invisible">今天</button>
+    <label class="col-sm-1 control-label">所属三级商户 <font color="red">*</font></label>
+
+    <div class="col-sm-2">
+        <select class="form-control">
+            <option value="">无</option>
+            <option value="韵达上海一部">韵达上海一部</option>
+            <option value="爱茵美上海一部">爱茵美上海一部</option>
+        </select>
+    </div>
+</div>
+
+<div class="form-group">
+    <label class="col-sm-1 control-label" for="exampleInputEmail2">性别 <font color="red">*</font></label>
+
+    <div class="col-sm-2">
+        <select class="form-control">
+            <option value="男">男</option>
+            <option value="女">女</option>
+        </select>
+    </div>
+    <button type="button" class="canzhao btn btn-default pull-left invisible" data-value="2014-01-12">今天
+    </button>
+    <label class="control-label col-sm-1">出生日期 <font color="red">*</font></label>
+
+    <div class="col-sm-2">
+        <input type="text" class="form-control date" id="exampleInputEmail2" placeholder=""
+               data-date-format="yyyy-mm-dd"/>
+    </div>
+    <button type="button" class="canzhao btn btn-default pull-left invisible" data-value="2014-01-12">今天
+    </button>
+</div>
+<div class="form-group">
+    <label class="col-sm-1 control-label" for="exampleInputEmail2">合同起始时间 <font color="red">*</font></label>
+
+    <div class="col-sm-2">
+        <input type="text" class="form-control date" id="exampleInputEmail2" placeholder=""
+               data-date-format="yyyy-mm-dd"/>
+    </div>
+    <button type="button" class="canzhao btn btn-default pull-left invisible">今天</button>
+    <label class="control-label col-sm-1">合同到期时间 <font color="red">*</font></label>
+
+    <div class="col-sm-2">
+        <input type="text" class="form-control date" id="exampleInputEmail2" placeholder=""
+               data-date-format="yyyy-mm-dd"/>
+    </div>
+</div>
+<div class="form-group">
+    <label class="col-sm-1 control-label" for="exampleInputEmail2">社保参保时间 <font color="red">*</font></label>
+
+    <div class="col-sm-2">
+        <input type="text" class="form-control date" id="exampleInputEmail2" placeholder=""
+               data-date-format="yyyy-mm-dd"/>
+    </div>
+    <button type="button" class="canzhao btn btn-default pull-left invisible">今天</button>
+    <label class="control-label col-sm-1">社保停保时间 <font color="red">*</font></label>
+
+    <div class="col-sm-2">
+        <input type="text" class="form-control date" id="exampleInputEmail2" placeholder=""
+               data-date-format="yyyy-mm-dd"/>
+    </div>
+</div>
+
+<div class="form-group">
+    <label class="col-sm-1 control-label" for="exampleInputEmail2">养老基数 <font color="red">*</font></label>
+
+    <div class="col-sm-2">
+        <input type="text" class="form-control" placeholder="养老基数"/>
+    </div>
+    <button type="button" class="canzhao btn btn-default pull-left invisible">今天</button>
+    <label class="col-sm-1 control-label" for="exampleInputEmail2">医疗基数 <font color="red">*</font></label>
+
+    <div class="col-sm-2">
+        <input type="text" class="form-control" placeholder="医疗基数"/>
+    </div>
+</div>
+
+<div class="form-group">
+    <label class="col-sm-1 control-label" for="exampleInputEmail2">失业基数 <font color="red">*</font></label>
+
+    <div class="col-sm-2">
+        <input type="text" class="form-control" placeholder="失业基数"/>
+    </div>
+    <button type="button" class="canzhao btn btn-default pull-left invisible">今天</button>
+    <label class="col-sm-1 control-label" for="exampleInputEmail2">工伤基数 <font color="red">*</font></label>
+
+    <div class="col-sm-2">
+        <input type="text" class="form-control" placeholder="工伤基数"/>
+    </div>
+</div>
+
+<div class="form-group">
+    <label class="col-sm-1 control-label" for="exampleInputEmail2">生育基数 <font color="red">*</font></label>
+
+    <div class="col-sm-2">
+        <input type="text" class="form-control" placeholder="生育基数"/>
+    </div>
+    <button type="button" class="canzhao btn btn-default pull-left invisible">今天</button>
+    <label class="col-sm-1 control-label" for="exampleInputEmail2">大病基数 <font color="red">*</font></label>
+
+    <div class="col-sm-2">
+        <input type="text" class="form-control" placeholder="大病基数"/>
+    </div>
+    <label class="col-sm-1 control-label" for="exampleInputEmail2">公积金基数 <font color="red">*</font></label>
+
+    <div class="col-sm-2">
+        <input type="text" class="form-control" placeholder="公积金基数"/>
+    </div>
+</div>
+
+<div class="form-group">
+    <label class="col-sm-1 control-label">缴纳城市 <font color="red">*</font></label>
+
+    <div class="col-sm-2">
+        <select class="form-control">
+            <option value="北京">北京</option>
+            <option value="上海">上海</option>
+        </select>
+    </div>
+    <button type="button" class="canzhao btn btn-default pull-left invisible">今天</button>
+    <label class="col-sm-1 control-label" for="exampleInputEmail2">保险帐套 <font color="red">*</font></label>
+
+    <div class="col-sm-2">
+        <select class="form-control">
+            <option value="北京三险">北京三险</option>
+            <option value="北京五险">北京五险</option>
+            <option value="上海三险">上海三险</option>
+            <option value="北京五险">北京五险</option>
+        </select>
+    </div>
+</div>
+
+<div class="form-group">
+    <label class="col-sm-1 control-label">学历</label>
+
+    <div class="col-sm-2">
+        <select class="form-control">
+            <option value="硕士">硕士</option>
+            <option value="博士">博士</option>
+        </select>
+    </div>
+    <button type="button" class="canzhao btn btn-default pull-left invisible">今天</button>
+    <label class="col-sm-1 control-label" for="exampleInputEmail2">部门</label>
+
+    <div class="col-sm-2">
+        <input type="text" class="form-control" placeholder="所在部门"/>
+    </div>
+</div>
+
+<div class="form-group">
+    <label class="col-sm-1 control-label" for="exampleInputEmail2">成本中心</label>
+
+    <div class="col-sm-2">
+        <input type="text" class="form-control" placeholder="成本中心"/>
+    </div>
+    <button type="button" class="canzhao btn btn-default pull-left invisible">今天</button>
+    <label class="col-sm-1 control-label" for="exampleInputEmail2">手机号</label>
+
+    <div class="col-sm-2">
+        <input type="text" class="form-control" placeholder="手机号"/>
+    </div>
+</div>
+
+<div class="form-group">
+    <label class="col-sm-1 control-label" for="exampleInputEmail2">QQ号</label>
+
+    <div class="col-sm-2">
+        <input type="text" class="form-control" placeholder="QQ号"/>
+    </div>
+    <button type="button" class="canzhao btn btn-default pull-left invisible">今天</button>
+    <label class="col-sm-1 control-label" for="exampleInputEmail2">户籍地址</label>
+
+    <div class="col-sm-2">
+        <input type="text" class="form-control" placeholder="户籍地址"/>
+    </div>
+</div>
+
+<div class="form-group">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-2">
+        <button type="submit" class="btn btn-primary"> 添加员工</button>
+    </div>
+</div>
+</form>
+</div>
+<div class="inset">
+    <hr/>
+    <strong>@Facewin</strong> Email: Facewin@facewin.com
+</div>
+</div>
+</div>
 </body>
 </html>

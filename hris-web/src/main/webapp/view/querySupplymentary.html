@@ -14,18 +14,18 @@
     <script type="text/javascript" src="js/bootstrap.js"></script>
     <script type="text/javascript" src="js/bootstrap-datepicker.js"></script>
     <script type="text/javascript" src="js/common.js"></script>
-    <title>公积金社保帐套管理 - 帐套查询</title>
+    <title>财务对账 - 补缴/退费查询</title>
 </head>
 <body>
     <div id="wrapper">
         <!-- Sidebar -->
         <div id="sidebar-wrapper">
             <ul class="sidebar-nav">
-                <li class="sidebar-brand"><a href="#">帐套管理</a></li>
+                <li class="sidebar-brand"><a href="#">补缴退费查询</a></li>
                 <li>
                     <ul class="sidebar-subnav">
-                        <li><a href="queryInsurance.html">查询帐套信息</a></li>
-						<li><a href="addInsurance.html">添加帐套信息</a></li>
+                        <li><a href="no.html">查询补缴退费</a></li>
+						<li><a href="addSupplymentary.html">添加补缴退费</a></li>
                     </ul>
                 </li>
             </ul>
@@ -33,146 +33,65 @@
 
         <div id="page-content-wrapper">
             <div class="content-header">
-                <h1>公积金社保帐套管理 - 帐套查询</h1>
+                <h1>财务对账 - 补缴/退费查询</h1>
             </div>
             <div style="padding: 20px;">
 
                 <form class="form-horizontal" role="form">
                     <div class="form-group">
-                        <label class="col-sm-1 control-label" for="addType">帐套类型</label>
+                        <label class="col-sm-1 control-label" for="addType">工号</label>
                          <div class="col-sm-2">
-                            <select type="text" class="form-control" id="addType" placeholder="社会保险" >
-                           <option> 社会保险</option>
-						   <option> 公积金</option>
-						   
-						   </select>
-						</div>
+                            <input type="text" class="form-control" id="exampleInputEmail2" placeholder="10001254" />
+                        </div>
                     <!--     <button type="button" class="btn btn-default pull-left invisible">参照</button> -->
-                        <label class="col-sm-1 control-label">帐套名称</label>
+                        <label class="col-sm-1 control-label">姓名</label>
                         <div class="col-sm-2">
-                            <input type="text" class="form-control" id="exampleInputEmail2" placeholder="帐套名称将被模糊查询" />
+                            <input type="text" class="form-control" id="exampleInputEmail2" placeholder="马三立" />
                         </div>
 						
-						 <label class="col-sm-1 control-label">城市代码</label>
+						 <label class="col-sm-1 control-label">功能选择</label>
                         <div class="col-sm-2">
                        <select type="text" class="form-control" id="holderlev" placeholder="客户层级" >
-                           <option> SHA-上海</option>
-						   <option> PEK-北京</option>
-						   <option> CSZ-深圳</option>
+                           <option> 补缴</option>
+						   <option> 退费</option>
+						   
 						   </select>
                         </div>
 						      			
-                        <label class="col-sm-1 control-label" for="holderlev">城市</label>
-                     
-                        <div class="col-sm-2">
-                       <select type="text" class="form-control" id="holderlev" placeholder="客户层级" >
-                           <option> SHA-上海</option>
-						   <option> PEK-北京</option>
-						   <option> CSZ-深圳</option>
-						   </select>
-                        </div>
-				
+                        <label class="col-sm-1 control-label" for="holderlev">补缴开始月份</label>
+                           <div class="col-sm-2">
+                       <input type="text" class="date form-control" id="exampleInputEmail2" placeholder="只能在1号生效" data-date-format="yyyy-mm-dd"/>
+						</div>
 
 		      </div>
 						      			
                  
                     <div class="form-group">
-					       <label class=" col-sm-1 control-label" for="holderlev">险种</label>
-                           <div class="col-sm-2">
-                           <select type="text" class="form-control" id="holderlev" placeholder="险种" >
-                           <option> 三险</option>
-						   <option> 五险</option>
-						   <option> 公积金</option>
-						   </select>
-						</div>
+					       <label class=" col-sm-1 control-label" for="holderlev">一级商户代码</label>
+                               <div class="col-sm-2">
+                            <input type="text" class="form-control" id="exampleInputEmail2" placeholder="输入一级商户代码" />
+                        </div>
+						 <label class=" col-sm-1 control-label" for="holderlev">二级商户代码</label>
+                               <div class="col-sm-2">
+                            <input type="text" class="form-control" id="exampleInputEmail2" placeholder="输入二级商户代码" />
+                        </div>
+						<label class=" col-sm-1 control-label" for="holderlev">三级商户代码</label>
+                               <div class="col-sm-2">
+                            <input type="text" class="form-control" id="exampleInputEmail2" placeholder="输入三级商户代码" />
+                        </div>
                     </div>
                        
-                         <div class="form-group">
+                    
+                </form>
+
+                    <div class="form-group">
                         <div class="col-sm-1"> </div>
                         <div class="col-sm-2">
                             <button type="submit" class="btn btn-primary">查询</button>
-                            
+                            <button type="submit" class="btn btn-primary">清除</button>
                         </div>
 
                     </div>
-                </form>
-
-                <table class="table table-striped">
-                    <thead>
-                        <tr>
-					<th>选择<br/><input type="checkbox"/></th>
-                            <th>序号</th>
-                            <th>帐套名称</th>
-                            <th>城市代码</th>
-                            <th>城市</th>
-                                                        <th>操作</th>
-
-                            
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-						<td><input type="checkbox"/></td>
-                            <td>1</td>
-                            <td>上海三险</td>
-                            <td>上海-SHA</td>
-                            <td>上海</td>
-                            
-                      
-							<td><a href="#">修改</a> / <a href="#">失效</a></td>
-                           
-                        </tr>
-                        <tr>
-						<td><input type="checkbox"/></td>
-                            <td>2</td>
-                            <td>上海五险</td>
-                            <td>上海-SHA</td>
-                            <td>上海</td>
-						
-							<td><a href="#">修改</a> / <a href="#">失效</a></td>
-                           
-                        </tr>
-                            <tr>
-                            <td><input type="checkbox"/></td>
-                              <td>3</td>
-                           <td>上海公积金</td>
-                            <td>上海-SHA</td>
-                            <td>上海</td>
-							<td><a href="#">修改</a> / <a href="#">失效</a></td>
-                        </tr>
-						     <tr>
-                            <td><input type="checkbox"/></td>
-                              <td>4</td>
-                            <td>北京公积金</td>
-                            <td>北京-PEK</td>
-                            <td>北京</td>
-						<td><a href="#">修改</a> / <a href="#">失效</a> </td>
-                        </tr>
-							    
-                    </tbody>
-                </table>
-                <div class="clearfix">
-                    <div class="pull-right">
-                        <div class=""><div class="pagination-inner"><ul class="pagination">
-
-                            <li class=" active"><a href="/tools/speed/index?">1</a></li>
-                            <li class=""><a href="/tools/speed/index?page_no=2">2</a></li>
-                            <li class=""><a href="/tools/speed/index?page_no=3">3</a></li>
-                            <li class=""><a href="/tools/speed/index?page_no=4">4</a></li>
-                            <li class=""><a href="/tools/speed/index?page_no=5">5</a></li>
-                            <li class=""><a href="/tools/speed/index?page_no=6">6</a></li>
-                            <li class=""><a href="/tools/speed/index?page_no=2">下一页</a></li>
-                        </ul></div></div>
-                    </div>
-					     
-                    <!-- <div class="form-group">
-                        <div class="col-sm-1"> </div>
-                        <div class="col-sm-2">
-                            <button type="submit" class="btn btn-primary">保存</button>
-                            <button type="submit" class="btn btn-primary">失效</button> 
-                        </div>
-
-                    </div> -->
                 </div>
 
                <!--  <ol>

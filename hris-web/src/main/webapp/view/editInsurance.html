@@ -1,0 +1,322 @@
+
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <meta name="author" content="; sekiyika" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="SHORTCUT ICON" href="http://www.baidu.com/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="style/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="style/docs.css" />
+    <link rel="stylesheet" type="text/css" href="style/sidebar.css" />
+    <link rel="stylesheet" type="text/css" href="style/datepicker.css" />
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/bootstrap-datepicker.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+    <title>公积金社保帐套管理 - 帐套修改</title>
+</head>
+<body>
+    <div id="wrapper">
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand"><a href="#">帐套管理</a></li>
+                <li>
+                    <ul class="sidebar-subnav">
+                        <li><a href="queryInsurance.html">查询帐套信息</a></li>
+						<li><a href="addInsurance.html">添加帐套信息</a></li>
+						<li><a href="addInsurance.html">修改帐套信息</a></li>
+                    </ul>
+                </li>
+            </ul>
+		</div>
+
+        <div id="page-content-wrapper">
+            <div class="content-header">
+                <h1>公积金社保帐套管理 - 帐套修改</h1>
+            </div>
+            <div style="padding: 20px;">
+
+                <form class="form-horizontal" role="form">
+                    <div class="form-group">
+                        <label class="col-sm-1 control-label" for="addType">帐套类型</label>
+                         <div class="col-sm-2">
+                            <select type="text" class="form-control" id="addType" placeholder="社会保险" >
+                           <option> 社会保险</option>
+						   <option> 公积金</option>
+						   
+						   </select>
+						</div>
+                    <!--     <button type="button" class="btn btn-default pull-left invisible">参照</button> -->
+                        <label class="col-sm-1 control-label">帐套名称</label>
+                        <div class="col-sm-2">
+                            <input type="text" class="form-control" id="exampleInputEmail2" placeholder="如：北京城镇三险" />
+                        </div>
+						
+						 <label class="col-sm-1 control-label">城市代码</label>
+                        <div class="col-sm-2">
+                       <select type="text" class="form-control" id="holderlev" placeholder="客户层级" >
+                           <option> SHA-上海</option>
+						   <option> PEK-北京</option>
+						   <option> CSZ-深圳</option>
+						   </select>
+                        </div>
+						      			
+                        <label class="col-sm-1 control-label" for="holderlev">城市</label>
+                           <div class="col-sm-2">
+                          <input type="text" class="form-control" id="exampleInputEmail2" placeholder="会根据城市代码选择自动生成" />
+						</div>
+
+		      </div>
+						      			
+                 
+                    <div class="form-group">
+					       <label class=" col-sm-1 control-label" for="holderlev">险种</label>
+                           <div class="col-sm-2">
+                           <select type="text" class="form-control" id="holderlev" placeholder="险种" >
+                           <option> 四险</option>
+						   <option> 六险</option>
+						   <option> 公积金</option>
+						   </select>
+						</div>
+                    </div>
+                       
+                    
+                </form>
+
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+					
+                            <th>序号</th>
+                            <th>保险类别</th>
+                            <th>基数上限</th>
+                            <th>基数下限</th>
+                            <th>个人缴纳比例</th>
+                            <th>公司缴纳比例</th>
+                            <th>定额</th>
+                            <th>舍入规则</th>
+                            
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+						
+                            <td>1</td>
+                            <td>养老保险</td>
+                            <td><div class="col-sm-8"><input type="text" class="form-control" id="exampleInputEmail2" placeholder="20000" /></div></td>
+                            <td><div class="col-sm-8"><input type="text" class="form-control" id="exampleInputEmail2" placeholder="10000" /></div></td>
+                            <td><div class="col-sm-8"><input type="text" class="form-control" id="exampleInputEmail2" placeholder="0.03" /></div></td>
+                            <td><div class="col-sm-8"><input type="text" class="form-control" id="exampleInputEmail2" placeholder="0.06" /></div></td>
+                            <td><div class="col-sm-8"><input type="text" class="form-control" id="exampleInputEmail2" placeholder="30" /></div></td>
+                            <td><div class="col-sm-12">
+                           <select type="text" class="form-control" id="holderlev" placeholder="险种" >
+                          
+						   <option> 见角进元</option>
+						    <option>四舍五入保留两位</option>
+						   <option> 见分进角</option>
+						      <option> 四舍五入保留一位</option>
+						   </select>
+						</div></td>
+                           
+                        </tr>
+                        <tr>
+						<td>2</td>
+                            <td>医疗保险</td>
+                            <td><div class="col-sm-8"><input type="text" class="form-control" id="exampleInputEmail2" placeholder="20000" /></div></td>
+                            <td><div class="col-sm-8"><input type="text" class="form-control" id="exampleInputEmail2" placeholder="10000" /></div></td>
+                            <td><div class="col-sm-8"><input type="text" class="form-control" id="exampleInputEmail2" placeholder="0.03" /></div></td>
+                            <td><div class="col-sm-8"><input type="text" class="form-control" id="exampleInputEmail2" placeholder="0.06" /></div></td>
+                            <td><div class="col-sm-8"><input type="text" class="form-control" id="exampleInputEmail2" placeholder="30" /></div></td>
+                            <td><div class="col-sm-12">
+                           <select type="text" class="form-control" id="holderlev" placeholder="险种" >
+                          
+						   <option> 见角进元</option>
+						    <option>四舍五入保留两位</option>
+						   <option> 见分进角</option>
+						      <option> 四舍五入保留一位</option>
+						   </select>
+						</div></td>
+						</tr>
+                        				
+						<tr>
+						<td>3</td>
+                            <td>工伤保险</td>
+                            <td><div class="col-sm-8"><input type="text" class="form-control" id="exampleInputEmail2" placeholder="20000" /></div></td>
+                            <td><div class="col-sm-8"><input type="text" class="form-control" id="exampleInputEmail2" placeholder="10000" /></div></td>
+                            <td><div class="col-sm-8"><input type="text" class="form-control" id="exampleInputEmail2" placeholder="0.03" /></div></td>
+                            <td><div class="col-sm-8"><input type="text" class="form-control" id="exampleInputEmail2" placeholder="0.06" /></div></td>
+                            <td><div class="col-sm-8"><input type="text" class="form-control" id="exampleInputEmail2" placeholder="30" /></div></td>
+                            <td><div class="col-sm-12">
+                           <select type="text" class="form-control" id="holderlev" placeholder="险种" >
+                          
+						   <option> 见角进元</option>
+						    <option>四舍五入保留两位</option>
+						   <option> 见分进角</option>
+						      <option> 四舍五入保留一位</option>
+						   </select>
+						</div></td>
+						</tr>
+												
+						<tr>
+						<td>4</td>
+                            <td>生育保险</td>
+                            <td><div class="col-sm-8"><input type="text" class="form-control" id="exampleInputEmail2" placeholder="20000" /></div></td>
+                            <td><div class="col-sm-8"><input type="text" class="form-control" id="exampleInputEmail2" placeholder="10000" /></div></td>
+                            <td><div class="col-sm-8"><input type="text" class="form-control" id="exampleInputEmail2" placeholder="0.03" /></div></td>
+                            <td><div class="col-sm-8"><input type="text" class="form-control" id="exampleInputEmail2" placeholder="0.06" /></div></td>
+                            <td><div class="col-sm-8"><input type="text" class="form-control" id="exampleInputEmail2" placeholder="30" /></div></td>
+                            <td><div class="col-sm-12">
+                           <select type="text" class="form-control" id="holderlev" placeholder="险种" >
+                          
+						   <option> 见角进元</option>
+						    <option>四舍五入保留两位</option>
+						   <option> 见分进角</option>
+						      <option> 四舍五入保留一位</option>
+						   </select>
+						</div></td>
+						</tr>
+											
+						<tr>
+						<td>5</td>
+                            <td>失业保险</td>
+                            <td><div class="col-sm-8"><input type="text" class="form-control" id="exampleInputEmail2" placeholder="20000" /></div></td>
+                            <td><div class="col-sm-8"><input type="text" class="form-control" id="exampleInputEmail2" placeholder="10000" /></div></td>
+                            <td><div class="col-sm-8"><input type="text" class="form-control" id="exampleInputEmail2" placeholder="0.03" /></div></td>
+                            <td><div class="col-sm-8"><input type="text" class="form-control" id="exampleInputEmail2" placeholder="0.06" /></div></td>
+                            <td><div class="col-sm-8"><input type="text" class="form-control" id="exampleInputEmail2" placeholder="30" /></div></td>
+                            <td><div class="col-sm-12">
+                           <select type="text" class="form-control" id="holderlev" placeholder="险种" >
+                          
+						   <option> 见角进元</option>
+						    <option>四舍五入保留两位</option>
+						   <option> 见分进角</option>
+						      <option> 四舍五入保留一位</option>
+						   </select>
+						</div></td>
+						</tr>
+						
+						<tr>
+						<td>5</td>
+                            <td>商业保险</td>
+                            <td><div class="col-sm-8"><input type="text" class="form-control" id="exampleInputEmail2" placeholder="" /></div></td>
+                            <td><div class="col-sm-8"><input type="text" class="form-control" id="exampleInputEmail2" placeholder="" /></div></td>
+                            <td><div class="col-sm-8"><input type="text" class="form-control" id="exampleInputEmail2" placeholder="" /></div></td>
+                            <td><div class="col-sm-8"><input type="text" class="form-control" id="exampleInputEmail2" placeholder="" /></div></td>
+                            <td><div class="col-sm-8"><input type="text" class="form-control" id="exampleInputEmail2" placeholder="30" /></div></td>
+                            <td><div class="col-sm-12">
+                           <select type="text" class="form-control" id="holderlev" placeholder="险种" >
+                          
+						   <option> 见角进元</option>
+						    <option>四舍五入保留两位</option>
+						   <option> 见分进角</option>
+						      <option> 四舍五入保留一位</option>
+						   </select>
+						</div></td>
+						</tr>
+						
+                    </tbody>
+                </table>
+             <!--    <div class="clearfix">
+                    <div class="pull-right">
+                        <div class=""><div class="pagination-inner"><ul class="pagination">
+
+                            <li class=" active"><a href="/tools/speed/index?">1</a></li>
+                            <li class=""><a href="/tools/speed/index?page_no=2">2</a></li>
+                            <li class=""><a href="/tools/speed/index?page_no=3">3</a></li>
+                            <li class=""><a href="/tools/speed/index?page_no=4">4</a></li>
+                            <li class=""><a href="/tools/speed/index?page_no=5">5</a></li>
+                            <li class=""><a href="/tools/speed/index?page_no=6">6</a></li>
+                            <li class=""><a href="/tools/speed/index?page_no=2">下一页</a></li>
+                        </ul></div></div>
+                    </div> -->
+					     
+                    <div class="form-group">
+                        <div class="col-sm-1"> </div>
+                        <div class="col-sm-2">
+                            <button type="submit" class="btn btn-primary">保存</button>
+                            <button type="submit" class="btn btn-primary">重置</button>
+                        </div>
+
+                    </div>
+                </div>
+
+               <!--  <ol>
+                    <li>“对账确认”：业务运营人员确认结算单后，商家即能查看到当期结算信息。商家操作“对账确认”，则微购财务可进行打款操作；（此处对账确认标识单独在结算单中处理，非结算单状态）标准流程：商家对账确认后，财务打款；但暂不要求商家必须三个工作日内跟进操作确认，只要商家五个工作日内未反馈则财务视为商家确认，直接进行打款确认；</li>
+                    <li>“明细下载”即结算期间的可结订单明细；</li>
+                </ol> -->
+                <br/>
+
+                <!-- <h3>明细下载信息</h3>
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>序号</th>
+                            <th>订单号</th>
+                            <th>商家ID</th>
+                            <th>商家名称</th>
+                            <th>订单支付金额</th>
+                            <th>退款金额</th>
+                            <th>手续费</th>
+                            <th>支付完成日期</th>
+                            <th>确认收货日期</th>
+                            <th>退款商家审批日期</th>
+                            <th>支付类型</th>
+                            <th>订单状态</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td></td>
+                            <td></td>
+                            <td>京东</td>
+                            <td>￥100</td>
+                            <td>￥0.6</td>
+                            <td>￥0.6</td>
+                            <td>2014-01-12</td>
+                            <td>2014-01-12</td>
+                            <td>2014-01-12</td>
+                            <td>百付宝</td>
+                            <td>等待发货</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td></td>
+                            <td></td>
+                            <td>京东</td>
+                            <td>￥100</td>
+                            <td>￥0.6</td>
+                            <td>￥0.6</td>
+                            <td>2014-01-12</td>
+                            <td>2014-01-12</td>
+                            <td>2014-01-12</td>
+                            <td>百付宝</td>
+                            <td>等待发货</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td></td>
+                            <td></td>
+                            <td>京东</td>
+                            <td>￥100</td>
+                            <td>￥0.6</td>
+                            <td>￥0.6</td>
+                            <td>2014-01-12</td>
+                            <td>2014-01-12</td>
+                            <td>2014-01-12</td>
+                            <td>百付宝</td>
+                            <td>等待发货</td>
+                        </tr>
+                    </tbody>
+                </table> -->
+
+                <div class="inset">
+                    <hr/>
+                    <strong>@facewin.com.cn</strong> Email: shiweishi@facewin.com.cn
+                </div>
+            </div>
+        </div>
+    </body>
+    </html>

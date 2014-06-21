@@ -1,15 +1,14 @@
-
 <!doctype html>
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
-    <meta name="author" content="; sekiyika" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="; sekiyika"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <link rel="SHORTCUT ICON" href="http://www.baidu.com/favicon.ico">
-    <link rel="stylesheet" type="text/css" href="style/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="style/docs.css" />
-    <link rel="stylesheet" type="text/css" href="style/sidebar.css" />
-    <link rel="stylesheet" type="text/css" href="style/datepicker.css" />
+    <link rel="stylesheet" type="text/css" href="style/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="style/docs.css"/>
+    <link rel="stylesheet" type="text/css" href="style/sidebar.css"/>
+    <link rel="stylesheet" type="text/css" href="style/datepicker.css"/>
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/bootstrap.js"></script>
     <script type="text/javascript" src="js/bootstrap-datepicker.js"></script>
@@ -17,44 +16,44 @@
     <title>商户信息 - 批量添加</title>
 </head>
 <body>
-    <div id="wrapper">
-        <!-- Sidebar -->
-        <div id="sidebar-wrapper">
-            <ul class="sidebar-nav">
-                <li class="sidebar-brand"><a href="#">商户管理</a></li>
-                <li>
-                    <ul class="sidebar-subnav">
-                        <li><a href="holderQuerry.html">查询商户信息</a></li>
-                        <li><a href="addNewHolder.html">添加商户信息</a></li>
-                        <li><a href="improtNewHolder.html">添加商户信息（Excel）</a></li>
-                    </ul>
-                </li>
-            </ul>
+<div id="wrapper">
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <li class="sidebar-brand"><a href="#">商户管理</a></li>
+            <li>
+                <ul class="sidebar-subnav">
+                    <li><a href="holderQuerry.html">查询商户信息</a></li>
+                    <li><a href="addNewHolder.html">添加商户信息</a></li>
+                    <li><a href="improtNewHolder.html">添加商户信息（Excel）</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div id="page-content-wrapper">
+
+        <div class="content-header">
+            <h1>批量导入新商户</h1>
         </div>
+        <div style="padding: 20px;">
 
-        <div id="page-content-wrapper">
-                                
-		   <div class="content-header">
-                <h1>批量导入新商户</h1>
-            </div>
-            <div style="padding: 20px;">
+            <form class="form-horizontal" role="form">
+                <div class="form-group">
 
-                <form class="form-horizontal" role="form">
+                    <label class="col-sm-1 control-label" for="exampleInputEmail2">请选择文件：</label>
+
+                    <div class="col-sm-6">
+                        <input type="file" class="form-control" id="inputholdername" placeholder="excel文件"/>
+                    </div>
                     <div class="form-group">
-                 
-					 <label class="col-sm-1 control-label" for="exampleInputEmail2">请选择文件：</label>
-            
-  <div class="col-sm-6">    
-                           <input type="file" class="form-control" id="inputholdername" placeholder="excel文件" />						 
-  </div>
-		<div class="form-group">
-		<div class="col-sm-6"> 
-                <button type="button" class="btn btn-primary">导入文件</button>
-				
-                <button type="button"  class="btn btn-danger">下载模板</button>
-            </div>
-</div>
-</form>
+                        <div class="col-sm-6">
+                            <button type="button" class="btn btn-primary">导入文件</button>
+
+                            <button type="button" class="btn btn-danger">下载模板</button>
+                        </div>
+                    </div>
+            </form>
             <div class="inset">
                 <hr/>
                 <strong>@facewin.com.cn</strong> Email: shiweishi@facewin.com.cn

@@ -1,15 +1,14 @@
-
 <!doctype html>
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
-    <meta name="author" content="; sekiyika" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="; sekiyika"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <link rel="SHORTCUT ICON" href="http://www.baidu.com/favicon.ico">
-    <link rel="stylesheet" type="text/css" href="style/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="style/docs.css" />
-    <link rel="stylesheet" type="text/css" href="style/sidebar.css" />
-    <link rel="stylesheet" type="text/css" href="style/datepicker.css" />
+    <link rel="stylesheet" type="text/css" href="style/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="style/docs.css"/>
+    <link rel="stylesheet" type="text/css" href="style/sidebar.css"/>
+    <link rel="stylesheet" type="text/css" href="style/datepicker.css"/>
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/bootstrap.js"></script>
     <script type="text/javascript" src="js/bootstrap-datepicker.js"></script>
@@ -17,260 +16,279 @@
     <title>商户管理 - 商户查询</title>
 </head>
 <body>
-    <div id="wrapper">
-        <!-- Sidebar -->
-        <div id="sidebar-wrapper">
-            <ul class="sidebar-nav">
-                <li class="sidebar-brand"><a href="#">商户管理</a></li>
-                <li>
-                    <ul class="sidebar-subnav">
-                        <li><a href="holderQuerry.html">查询商户信息</a></li>
-                        <li><a href="addNewHolder.html">添加商户信息</a></li>
-                        <li><a href="improtNewHolder.html">添加商户信息（Excel）</a></li>
-                    </ul>
-                </li>
+<div id="wrapper">
+<!-- Sidebar -->
+<div id="sidebar-wrapper">
+    <ul class="sidebar-nav">
+        <li class="sidebar-brand"><a href="#">商户管理</a></li>
+        <li>
+            <ul class="sidebar-subnav">
+                <li><a href="holderQuerry.html">查询商户信息</a></li>
+                <li><a href="addNewHolder.html">添加商户信息</a></li>
+                <li><a href="improtNewHolder.html">添加商户信息（Excel）</a></li>
             </ul>
+        </li>
+    </ul>
+</div>
+
+<div id="page-content-wrapper">
+<div class="content-header">
+    <h1>商户管理-商户查询</h1>
+</div>
+<div style="padding: 20px;">
+
+<form class="form-horizontal" role="form">
+    <div class="form-group">
+        <label class="col-sm-1 control-label" for="exampleInputEmail2">商户代码</label>
+
+        <div class="col-sm-2">
+            <input type="text" class="form-control" id="exampleInputEmail2" placeholder="请输入商户代码"/>
+        </div>
+        <!--     <button type="button" class="btn btn-default pull-left invisible">参照</button> -->
+        <label class="col-sm-1 control-label">商户名称</label>
+
+        <div class="col-sm-2">
+            <input type="text" class="form-control" id="exampleInputEmail2" placeholder="商户名称将被模糊查询"/>
         </div>
 
-        <div id="page-content-wrapper">
-            <div class="content-header">
-                <h1>商户管理-商户查询</h1>
-            </div>
-            <div style="padding: 20px;">
+        <label class="col-sm-1 control-label">商户经营地</label>
 
-                <form class="form-horizontal" role="form">
-                    <div class="form-group">
-                        <label class="col-sm-1 control-label" for="exampleInputEmail2">商户代码</label>
-                        <div class="col-sm-2">
-                            <input type="text" class="form-control" id="exampleInputEmail2" placeholder="请输入商户代码" />
-                        </div>
-                    <!--     <button type="button" class="btn btn-default pull-left invisible">参照</button> -->
-                        <label class="col-sm-1 control-label">商户名称</label>
-                        <div class="col-sm-2">
-                            <input type="text" class="form-control" id="exampleInputEmail2" placeholder="商户名称将被模糊查询" />
-                        </div>
-						
-						 <label class="col-sm-1 control-label">商户经营地</label>
-                        <div class="col-sm-2">
-                            <input type="text" class="form-control" id="exampleInputEmail2" placeholder="商户经营地将被模糊查询" />
-                        </div>
-						      			
-                        <label class="col-sm-1 control-label" for="holderlev">商户层级</label>
-                           <div class="col-sm-2">
-                            <select type="text" class="form-control" id="holderlev" placeholder="客户层级" >
-                           <option> 1级</option>
-						   <option> 2级</option>
-						   <option> 3级</option>
-						   </select>
-						</div>
+        <div class="col-sm-2">
+            <input type="text" class="form-control" id="exampleInputEmail2" placeholder="商户经营地将被模糊查询"/>
+        </div>
 
-		 
-                    </div>
-                    <div class="form-group">
-                        <label class="col-sm-1 control-label" for="exampleInputEmail2">合同起始日期</label>
-                        <div class="col-sm-2">
-                            <input type="text" class="form-control date" id="exampleInputEmail2" placeholder="" data-date-format="yyyy-mm-dd"/>
-                        </div>
-                      <!--   <button type="button col-sm-1" class="canzhao btn btn-default pull-left" data-value="2014-01-12">参照</button> -->
-                        <label class="col-sm-1 control-label">至</label>
-                        <div class="col-sm-2">
-                            <input type="text" class="form-control date" id="exampleInputEmail2" placeholder="" data-date-format="yyyy-mm-dd"/>
-                        </div>
-                 <!--        <button type="button col-sm-1" class="canzhao btn btn-default pull-left" data-value="2014-01-12">参照</button> -->
-                    <label class="col-sm-1 control-label" for="holderlev">所属父商户</label>
-                           <div class="col-sm-2">
-                            <input type="text" class="form-control" id="exampleInputEmail2" placeholder="父商户代号" />
-						   </div>
-					</div>
-					
-					 <div class="form-group">
-                        <label class="col-sm-1 control-label" for="exampleInputEmail2">合同结束日期</label>
-                        <div class="col-sm-2">
-                            <input type="text" class="form-control date" id="exampleInputEmail2" placeholder="" data-date-format="yyyy-mm-dd"/>
-                        </div>
-                      <!--   <button type="button col-sm-1" class="canzhao btn btn-default pull-left" data-value="2014-01-12">参照</button> -->
-                        <label class="col-sm-1 control-label">至</label>
-                        <div class="col-sm-2">
-                            <input type="text" class="form-control date" id="exampleInputEmail2" placeholder="" data-date-format="yyyy-mm-dd"/>
-                        </div>
-                 <!--        <button type="button col-sm-1" class="canzhao btn btn-default pull-left" data-value="2014-01-12">参照</button> -->
-                    
-					
-						<label class="col-sm-1 control-label" for="holderlev">服务类别</label>
-                           <div class="col-sm-2">
-                            <select type="text" class="form-control" id="holderlev" placeholder="服务类别" >
-                           <option> 派遣</option>
-						   <option> 代理</option>
-						   <option> 其他</option>
-						   </select>
-						</div>
-					<label class="col-sm-1 control-label" for="holderlev">开票类别</label>
-                           <div class="col-sm-2">
-                            <select type="text" class="form-control" id="holderlev" placeholder="服务类别" >
-                           <option> 增值税票</option>
-						   <option> 普通发票</option>
-						   <option> 其他</option>
-						   </select>
-						</div>
-					
-					</div>
-                    <div class="form-group">
-                        <div class="col-sm-1"> </div>
-                        <div class="col-sm-2">
-                            <button type="submit" class="btn btn-primary">查询</button>
-                        </div>
+        <label class="col-sm-1 control-label" for="holderlev">商户层级</label>
 
-                    </div>
-                </form>
+        <div class="col-sm-2">
+            <select type="text" class="form-control" id="holderlev" placeholder="客户层级">
+                <option> 1级</option>
+                <option> 2级</option>
+                <option> 3级</option>
+            </select>
+        </div>
 
-                <table class="table table-striped">
-                    <thead>
-                        <tr>
-						<th>选择<br/><input type="checkbox"/></th>
-                            <th>序号</th>
-                            <th>商户代码</th>
-                            <th>商户名称</th>
-                            <th>合同起始日期</th>
-                            <th>合同结束日期</th>
-                            <th>商户经营地</th>
-                            <th>所属父商户</th>
-                            <th>开票类别</th>
-                            <th>服务类别</th>
-                            <th>服务费价格</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-						<td><input type="checkbox"/></td>
-                            <td>1</td>
-                            <td>100010010</td>
-                            <td>韵达总部</td>
-                            <td>2012-10-1</td>
-                            <td>2013-10-31</td>
-                            <td>上海</td>
-                            <td>增值税票</td>
-                            <td>派遣</td>
-                            <td>80</td>
-                            <td><a href="#">修改</a> <a href="#">删除</a></td>
-                        </tr>
-                        <tr>
-						<td><input type="checkbox"/></td>
-                            <td>2</td>
-                            <td>1000010203</td>
-                            <td>韵达北京分拨中心</td>
-                            <td>2012-11-5</td>
-                            <td>2013-5-8</td>
-                            <td>北京</td>
-                            <td>普通发票</td>
-                            <td>派遣</td>
-                            <td>80</td>
-                            <td><a href="#">修改</a> <a href="#">删除</a></td>
-                        </tr>
-                        <tr>
-							<td><input type="checkbox"/></td>
-                            <td>3</td>
-                            <td>10000223</td>
-                            <td>韵达石家庄分拨中心</td>
-                            <td>2013-11-5</td>
-                            <td>2014-11-5</td>
-                            <td>石家庄</td>
-                            <td>普通发票</td>
-                            <td>派遣</td>
-                            <td>70</td>
-                            <td><a href="#">修改</a> <a href="#">删除</a></td>
-                        </tr>
-                    </tbody>
-                </table>
-                <div class="clearfix">
-                    <div class="pull-right">
-                        <div class=""><div class="pagination-inner"><ul class="pagination">
 
-                            <li class=" active"><a href="/tools/speed/index?">1</a></li>
-                            <li class=""><a href="/tools/speed/index?page_no=2">2</a></li>
-                            <li class=""><a href="/tools/speed/index?page_no=3">3</a></li>
-                            <li class=""><a href="/tools/speed/index?page_no=4">4</a></li>
-                            <li class=""><a href="/tools/speed/index?page_no=5">5</a></li>
-                            <li class=""><a href="/tools/speed/index?page_no=6">6</a></li>
-                            <li class=""><a href="/tools/speed/index?page_no=2">下一页</a></li>
-                        </ul></div></div>
-                    </div>
-                </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-1 control-label" for="exampleInputEmail2">合同起始日期</label>
 
-               <!--  <ol>
-                    <li>“对账确认”：业务运营人员确认结算单后，商家即能查看到当期结算信息。商家操作“对账确认”，则微购财务可进行打款操作；（此处对账确认标识单独在结算单中处理，非结算单状态）标准流程：商家对账确认后，财务打款；但暂不要求商家必须三个工作日内跟进操作确认，只要商家五个工作日内未反馈则财务视为商家确认，直接进行打款确认；</li>
-                    <li>“明细下载”即结算期间的可结订单明细；</li>
-                </ol> -->
-                <br/>
+        <div class="col-sm-2">
+            <input type="text" class="form-control date" id="exampleInputEmail2" placeholder=""
+                   data-date-format="yyyy-mm-dd"/>
+        </div>
+        <!--   <button type="button col-sm-1" class="canzhao btn btn-default pull-left" data-value="2014-01-12">参照</button> -->
+        <label class="col-sm-1 control-label">至</label>
 
-                <!-- <h3>明细下载信息</h3>
-                <table class="table table-striped">
-                    <thead>
-                        <tr>
-                            <th>序号</th>
-                            <th>订单号</th>
-                            <th>商家ID</th>
-                            <th>商家名称</th>
-                            <th>订单支付金额</th>
-                            <th>退款金额</th>
-                            <th>手续费</th>
-                            <th>支付完成日期</th>
-                            <th>确认收货日期</th>
-                            <th>退款商家审批日期</th>
-                            <th>支付类型</th>
-                            <th>订单状态</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td></td>
-                            <td></td>
-                            <td>京东</td>
-                            <td>￥100</td>
-                            <td>￥0.6</td>
-                            <td>￥0.6</td>
-                            <td>2014-01-12</td>
-                            <td>2014-01-12</td>
-                            <td>2014-01-12</td>
-                            <td>百付宝</td>
-                            <td>等待发货</td>
-                        </tr>
-                        <tr>
-                            <td>1</td>
-                            <td></td>
-                            <td></td>
-                            <td>京东</td>
-                            <td>￥100</td>
-                            <td>￥0.6</td>
-                            <td>￥0.6</td>
-                            <td>2014-01-12</td>
-                            <td>2014-01-12</td>
-                            <td>2014-01-12</td>
-                            <td>百付宝</td>
-                            <td>等待发货</td>
-                        </tr>
-                        <tr>
-                            <td>1</td>
-                            <td></td>
-                            <td></td>
-                            <td>京东</td>
-                            <td>￥100</td>
-                            <td>￥0.6</td>
-                            <td>￥0.6</td>
-                            <td>2014-01-12</td>
-                            <td>2014-01-12</td>
-                            <td>2014-01-12</td>
-                            <td>百付宝</td>
-                            <td>等待发货</td>
-                        </tr>
-                    </tbody>
-                </table> -->
+        <div class="col-sm-2">
+            <input type="text" class="form-control date" id="exampleInputEmail2" placeholder=""
+                   data-date-format="yyyy-mm-dd"/>
+        </div>
+        <!--        <button type="button col-sm-1" class="canzhao btn btn-default pull-left" data-value="2014-01-12">参照</button> -->
+        <label class="col-sm-1 control-label" for="holderlev">所属父商户</label>
 
-                <div class="inset">
-                    <hr/>
-                    <strong>@facewin.com.cn</strong> Email: shiweishi@facewin.com.cn
-                </div>
+        <div class="col-sm-2">
+            <input type="text" class="form-control" id="exampleInputEmail2" placeholder="父商户代号"/>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="col-sm-1 control-label" for="exampleInputEmail2">合同结束日期</label>
+
+        <div class="col-sm-2">
+            <input type="text" class="form-control date" id="exampleInputEmail2" placeholder=""
+                   data-date-format="yyyy-mm-dd"/>
+        </div>
+        <!--   <button type="button col-sm-1" class="canzhao btn btn-default pull-left" data-value="2014-01-12">参照</button> -->
+        <label class="col-sm-1 control-label">至</label>
+
+        <div class="col-sm-2">
+            <input type="text" class="form-control date" id="exampleInputEmail2" placeholder=""
+                   data-date-format="yyyy-mm-dd"/>
+        </div>
+        <!--        <button type="button col-sm-1" class="canzhao btn btn-default pull-left" data-value="2014-01-12">参照</button> -->
+
+
+        <label class="col-sm-1 control-label" for="holderlev">服务类别</label>
+
+        <div class="col-sm-2">
+            <select type="text" class="form-control" id="holderlev" placeholder="服务类别">
+                <option> 派遣</option>
+                <option> 代理</option>
+                <option> 其他</option>
+            </select>
+        </div>
+        <label class="col-sm-1 control-label" for="holderlev">开票类别</label>
+
+        <div class="col-sm-2">
+            <select type="text" class="form-control" id="holderlev" placeholder="服务类别">
+                <option> 增值税票</option>
+                <option> 普通发票</option>
+                <option> 其他</option>
+            </select>
+        </div>
+
+    </div>
+    <div class="form-group">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-2">
+            <button type="submit" class="btn btn-primary">查询</button>
+        </div>
+
+    </div>
+</form>
+
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th>选择<br/><input type="checkbox"/></th>
+        <th>序号</th>
+        <th>商户代码</th>
+        <th>商户名称</th>
+        <th>合同起始日期</th>
+        <th>合同结束日期</th>
+        <th>商户经营地</th>
+        <th>所属父商户</th>
+        <th>开票类别</th>
+        <th>服务类别</th>
+        <th>服务费价格</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td><input type="checkbox"/></td>
+        <td>1</td>
+        <td>100010010</td>
+        <td>韵达总部</td>
+        <td>2012-10-1</td>
+        <td>2013-10-31</td>
+        <td>上海</td>
+        <td>增值税票</td>
+        <td>派遣</td>
+        <td>80</td>
+        <td><a href="#">修改</a> <a href="#">删除</a></td>
+    </tr>
+    <tr>
+        <td><input type="checkbox"/></td>
+        <td>2</td>
+        <td>1000010203</td>
+        <td>韵达北京分拨中心</td>
+        <td>2012-11-5</td>
+        <td>2013-5-8</td>
+        <td>北京</td>
+        <td>普通发票</td>
+        <td>派遣</td>
+        <td>80</td>
+        <td><a href="#">修改</a> <a href="#">删除</a></td>
+    </tr>
+    <tr>
+        <td><input type="checkbox"/></td>
+        <td>3</td>
+        <td>10000223</td>
+        <td>韵达石家庄分拨中心</td>
+        <td>2013-11-5</td>
+        <td>2014-11-5</td>
+        <td>石家庄</td>
+        <td>普通发票</td>
+        <td>派遣</td>
+        <td>70</td>
+        <td><a href="#">修改</a> <a href="#">删除</a></td>
+    </tr>
+    </tbody>
+</table>
+<div class="clearfix">
+    <div class="pull-right">
+        <div class="">
+            <div class="pagination-inner">
+                <ul class="pagination">
+
+                    <li class=" active"><a href="/tools/speed/index?">1</a></li>
+                    <li class=""><a href="/tools/speed/index?page_no=2">2</a></li>
+                    <li class=""><a href="/tools/speed/index?page_no=3">3</a></li>
+                    <li class=""><a href="/tools/speed/index?page_no=4">4</a></li>
+                    <li class=""><a href="/tools/speed/index?page_no=5">5</a></li>
+                    <li class=""><a href="/tools/speed/index?page_no=6">6</a></li>
+                    <li class=""><a href="/tools/speed/index?page_no=2">下一页</a></li>
+                </ul>
             </div>
         </div>
-    </body>
-    </html>
+    </div>
+</div>
+
+<!--  <ol>
+     <li>“对账确认”：业务运营人员确认结算单后，商家即能查看到当期结算信息。商家操作“对账确认”，则微购财务可进行打款操作；（此处对账确认标识单独在结算单中处理，非结算单状态）标准流程：商家对账确认后，财务打款；但暂不要求商家必须三个工作日内跟进操作确认，只要商家五个工作日内未反馈则财务视为商家确认，直接进行打款确认；</li>
+     <li>“明细下载”即结算期间的可结订单明细；</li>
+ </ol> -->
+<br/>
+
+<!-- <h3>明细下载信息</h3>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>序号</th>
+            <th>订单号</th>
+            <th>商家ID</th>
+            <th>商家名称</th>
+            <th>订单支付金额</th>
+            <th>退款金额</th>
+            <th>手续费</th>
+            <th>支付完成日期</th>
+            <th>确认收货日期</th>
+            <th>退款商家审批日期</th>
+            <th>支付类型</th>
+            <th>订单状态</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td></td>
+            <td></td>
+            <td>京东</td>
+            <td>￥100</td>
+            <td>￥0.6</td>
+            <td>￥0.6</td>
+            <td>2014-01-12</td>
+            <td>2014-01-12</td>
+            <td>2014-01-12</td>
+            <td>百付宝</td>
+            <td>等待发货</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td></td>
+            <td></td>
+            <td>京东</td>
+            <td>￥100</td>
+            <td>￥0.6</td>
+            <td>￥0.6</td>
+            <td>2014-01-12</td>
+            <td>2014-01-12</td>
+            <td>2014-01-12</td>
+            <td>百付宝</td>
+            <td>等待发货</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td></td>
+            <td></td>
+            <td>京东</td>
+            <td>￥100</td>
+            <td>￥0.6</td>
+            <td>￥0.6</td>
+            <td>2014-01-12</td>
+            <td>2014-01-12</td>
+            <td>2014-01-12</td>
+            <td>百付宝</td>
+            <td>等待发货</td>
+        </tr>
+    </tbody>
+</table> -->
+
+<div class="inset">
+    <hr/>
+    <strong>@facewin.com.cn</strong> Email: shiweishi@facewin.com.cn
+</div>
+</div>
+</div>
+</body>
+</html>

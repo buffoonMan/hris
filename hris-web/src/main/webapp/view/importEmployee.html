@@ -1,159 +1,63 @@
-
 <!doctype html>
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
-    <meta name="author" content="; sekiyika" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="; sekiyika"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <link rel="SHORTCUT ICON" href="http://www.baidu.com/favicon.ico">
-    <link rel="stylesheet" type="text/css" href="style/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="style/docs.css" />
-    <link rel="stylesheet" type="text/css" href="style/sidebar.css" />
-    <link rel="stylesheet" type="text/css" href="style/datepicker.css" />
+    <link rel="stylesheet" type="text/css" href="style/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="style/docs.css"/>
+    <link rel="stylesheet" type="text/css" href="style/sidebar.css"/>
+    <link rel="stylesheet" type="text/css" href="style/datepicker.css"/>
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/bootstrap.js"></script>
     <script type="text/javascript" src="js/bootstrap-datepicker.js"></script>
     <script type="text/javascript" src="js/common.js"></script>
-    <title>员工信息 - Excel导入</title>
+    <title>员工信息 - 批量添加</title>
 </head>
 <body>
-    <div id="wrapper">
-        <!-- Sidebar -->
-        <div id="sidebar-wrapper">
-            <ul class="sidebar-nav">
-                <li class="sidebar-brand"><a href="#">结算中心</a></li>
-                <li><a href="yingfukuanshangjia.html">应付款商家</a></li>
-                <li><a href="yingshoukuanzhifugongsi.html">应收款支付公司</a></li>
-            </ul>
+<div id="wrapper">
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <li class="sidebar-brand"><a href="#">员工信息</a></li>
+            <li>
+                <ul class="sidebar-subnav">
+                    <li><a href="queryEmployee.html">查询员工信息</a></li>
+                    <li><a href="addEmployee.html">添加员工信息</a></li>
+                    <li><a href="importEmployee.html">添加员工信息（Excel）</a></li>
+                    <li><a href="dimissionEmployee.html">员工离职</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div id="page-content-wrapper">
+
+        <div class="content-header">
+            <h1>批量导入新新员工</h1>
         </div>
+        <div style="padding: 20px;">
 
-        <div id="page-content-wrapper">
-            <div class="content-header">
-                <h1>批量导入员工信息</h1>
-            </div>
-            <div style="padding: 20px;">
+            <form class="form-horizontal" role="form">
+                <div class="form-group">
 
-                <form class="form-horizontal" role="form">
+                    <label class="col-sm-1 control-label" for="exampleInputEmail2">请选择文件：</label>
+
+                    <div class="col-sm-6">
+                        <input type="file" class="form-control" id="inputholdername" placeholder="excel文件"/>
+                    </div>
+                </div>
+                <div class="form-group">
                     <div class="form-group">
-                       <div class="row">
-					   
-					   
-<div class="col-xs-2">                       
-<!-- 					   <label class="col-sm-10 control-label" for="importfiledown" >请下载标准导入excel文件 </label>
- -->            
-  
-                           <input type="text" class="form-control" id="importfiledown" placeholder="请下载标准导入excel文件" />
-						 
-</div>
-<!-- 
-<div class="col-xs-2">
-						<label class="col-sm-1 control-label" for="inputholderloca">商户经营地</label>
-                        
-                            <input type="text" class="form-control" id="inputholderloca" placeholder="商户经营地" />
-                        
-						
-</div>
-			<div class="col-xs-2">          			
-                        <label class="col-sm-1 control-label" for="contractbeg">合同起始时间</label>
-                        
-                            <input type="text" class="form-control" id="contractbeg" placeholder="合同起始时间" />
-                        
-						
+                        <div class="col-sm-6">
+                            <button type="button" class="btn btn-primary">导入文件</button>
 
-			</div>
-			<div class="col-xs-2">          			
-                        <label class="col-sm-1 control-label" for="contractend">合同结束时间</label>
-                        
-                            <input type="text" class="form-control" id="contractend" placeholder="合同结束时间" />
-                        
-						
-
-			</div>	
-			<div class="col-xs-1">          			
-                        <label class="col-sm-1 control-label" for="holderlev">客户层级</label>
-                        
-                            <select type="text" class="form-control" id="holderlev" placeholder="客户层级" >
-                           <option> 1级</option>
-						   <option> 2级</option>
-						   <option> 3级</option>
-						   </select>
-						
-
-			</div>	 
-					
-			<div class="col-xs-2">          			
-                        <label class="col-sm-1 control-label" for="fatherholder">所属父商户</label>
-                        
-                            <select type="text" class="form-control " id="fatherholder" placeholder="所属父商户" >
-                           <option> 韵达总部</option>
-						   <option> 韵达某分拨中心</option>
-						   <option> 贝因美总部</option>
-						   </select>
-						
-
-			</div>	 			
-			</div>
-<div class="row">							
-							<div class="col-xs-1">          			
-                        <label class="col-sm-1 control-label" for="stype">服务类别</label>
-                        
-                            <select type="text" class="form-control " id="stype" placeholder="服务类别" >
-                           <option> 代理</option>
-						   <option> 派遣</option>
-						   <option> 其他</option>
-						   </select>
-						
-						</div>
-							
-							<div class="col-xs-1">          			
-                        <label class="col-sm-1 control-label" for="ntype">开票类别</label>
-                        
-						
-                           <select type="text" class="form-control " id="ntype" placeholder="开票类别" >
-                           <option> 增值税票</option>
-						   <option> 普通发票</option>
-						   <option> 其他</option>
-						   </select>
-						</div>
-						<div class="col-xs-2">          			
-                        <label class="col-sm-1 control-label" for="smount">服务费价格</label>
-                        
-                            <input type="text" class="form-control" id="smount" placeholder="服务费价格" />
-                        
-						
-
-			</div>	
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-			</div>	 			
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						"
-						 -->
-						
-             </form>
-<button type="button">浏览...</button>
-                <button type="button" class="btn btn-primary btn-lg ">导入文件</button>
-				
-                <button type="button"  class="btn btn-danger btn-lg">下载模板</button>
-            </div>
-
+                            <button type="button" class="btn btn-danger">下载模板</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
             <div class="inset">
                 <hr/>
                 <strong>@facewin.com.cn</strong> Email: shiweishi@facewin.com.cn

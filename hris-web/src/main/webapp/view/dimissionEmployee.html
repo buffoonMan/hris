@@ -2,13 +2,13 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
-    <meta name="author" content="; sekiyika" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="; sekiyika"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <link rel="SHORTCUT ICON" href="http://www.baidu.com/favicon.ico">
-    <link rel="stylesheet" type="text/css" href="style/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="style/docs.css" />
-    <link rel="stylesheet" type="text/css" href="style/sidebar.css" />
-    <link rel="stylesheet" type="text/css" href="style/datepicker.css" />
+    <link rel="stylesheet" type="text/css" href="style/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="style/docs.css"/>
+    <link rel="stylesheet" type="text/css" href="style/sidebar.css"/>
+    <link rel="stylesheet" type="text/css" href="style/datepicker.css"/>
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/bootstrap.js"></script>
     <script type="text/javascript" src="js/bootstrap-datepicker.js"></script>
@@ -16,66 +16,73 @@
     <title>员工 - 离职</title>
 </head>
 <body>
-    <div id="wrapper">
-        <!-- Sidebar -->
-        <div id="sidebar-wrapper">
-            <ul class="sidebar-nav">
-                <li class="sidebar-brand"><a href="#">员工信息</a></li>
-                <li>
-                    <ul class="sidebar-subnav">
-                        <li><a href="queryEmployee.html">查询员工信息</a></li>
-						<li><a href="addEmployee.html">添加员工信息</a></li>
-						<li><a href="addEmployee2.html">添加员工信息（Excel）</a></li>
-						<li><a href="dimissionEmployee.html">员工离职</a></li>
-                    </ul>
-                </li>
-            </ul>
-		</div>
-		
-        <div id="page-content-wrapper">
-            <div class="content-header">
-                <h1>员工 - 离职</h1>
-            </div>
-            <div style="padding: 20px;">
+<div id="wrapper">
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <li class="sidebar-brand"><a href="#">员工信息</a></li>
+            <li>
+                <ul class="sidebar-subnav">
+                    <li><a href="queryEmployee.html">查询员工信息</a></li>
+                    <li><a href="addEmployee.html">添加员工信息</a></li>
+                    <li><a href="importEmployee.html">添加员工信息（Excel）</a></li>
+                    <li><a href="dimissionEmployee.html">员工离职</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
 
-                <form class="form-horizontal" role="form">
-                    <div class="form-group">
-                        <label class="col-sm-1 control-label" for="exampleInputEmail2">员工工号 <font color="red">*</font></label>
-                        <div class="col-sm-2">
-                            <input type="text" class="form-control" id="exampleInputEmail2" placeholder="员工工号" />
-                        </div>
-                        <button type="button" class="canzhao btn btn-default pull-left visible">查看</button>
+    <div id="page-content-wrapper">
+        <div class="content-header">
+            <h1>员工 - 离职</h1>
+        </div>
+        <div style="padding: 20px;">
+
+            <form class="form-horizontal" role="form">
+                <div class="form-group">
+                    <label class="col-sm-1 control-label" for="exampleInputEmail2">员工工号 <font
+                            color="red">*</font></label>
+
+                    <div class="col-sm-2">
+                        <input type="text" class="form-control" id="exampleInputEmail2" placeholder="员工工号"/>
                     </div>
-                    <div class="form-group">
-                        <label class="col-sm-1 control-label" for="exampleInputEmail2">离职日期 <font color="red">*</font></label>
-                        <div class="col-sm-2">
-                            <input type="text" class="form-control date" id="exampleInputEmail2" placeholder="" data-date-format="yyyy-mm-dd"/>
-                        </div>
-                        <button type="button" class="canzhao btn btn-default pull-left invisible">今天</button>
-                        <label class="control-label col-sm-1">社保停缴日期 <font color="red">*</font></label>
-                        <div class="col-sm-2">
-                            <input type="text" class="form-control date" id="exampleInputEmail2" placeholder="" data-date-format="yyyy-mm-dd"/>
-                        </div>
+                    <button type="button" class="canzhao btn btn-default pull-left visible">查看</button>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-1 control-label" for="exampleInputEmail2">离职日期 <font
+                            color="red">*</font></label>
+
+                    <div class="col-sm-2">
+                        <input type="text" class="form-control date" id="exampleInputEmail2" placeholder=""
+                               data-date-format="yyyy-mm-dd"/>
                     </div>
-					
-					
-                    <div class="form-group">
-                        <div class="col-sm-1"> </div>
-                        <div class="col-sm-2">
-							<button type="submit" class="btn btn-primary"> 离  职 </button>
-                        </div>
+                    <button type="button" class="canzhao btn btn-default pull-left invisible">今天</button>
+                    <label class="control-label col-sm-1">社保停缴日期 <font color="red">*</font></label>
+
+                    <div class="col-sm-2">
+                        <input type="text" class="form-control date" id="exampleInputEmail2" placeholder=""
+                               data-date-format="yyyy-mm-dd"/>
                     </div>
-                </form>
-				<p>
-                    说明：已离职的员工信息不会被系统物理删除，还可以被检索出。
-                </p>
-            </div>
-			
-            <div class="inset">
-                <hr/>
-                <strong>@Facewin</strong> Email: Facewin@facewin.com
-            </div>
+                </div>
+
+
+                <div class="form-group">
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-2">
+                        <button type="submit" class="btn btn-primary"> 离 职</button>
+                    </div>
+                </div>
+            </form>
+            <p>
+                说明：已离职的员工信息不会被系统物理删除，还可以被检索出。
+            </p>
+        </div>
+
+        <div class="inset">
+            <hr/>
+            <strong>@Facewin</strong> Email: Facewin@facewin.com
         </div>
     </div>
+</div>
 </body>
 </html>

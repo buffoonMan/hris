@@ -1,20 +1,19 @@
-
 <!doctype html>
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
-    <meta name="author" content="; sekiyika" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+    <meta name="author" content="; sekiyika"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
     <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
     <META HTTP-EQUIV="Cache-Control" CONTENT="no-cache">
     <META HTTP-EQUIV="Expires" CONTENT="0">
 
     <link rel="SHORTCUT ICON" href="http://www.baidu.com/favicon.ico">
-    <link rel="stylesheet" type="text/css" href="style/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="style/docs.css" />
-    <link rel="stylesheet" type="text/css" href="style/sidebar.css" />
-    <link rel="stylesheet" type="text/css" href="style/datepicker.css" />
+    <link rel="stylesheet" type="text/css" href="style/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="style/docs.css"/>
+    <link rel="stylesheet" type="text/css" href="style/sidebar.css"/>
+    <link rel="stylesheet" type="text/css" href="style/datepicker.css"/>
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/bootstrap.js"></script>
     <script type="text/javascript" src="js/bootstrap-datepicker.js"></script>
@@ -22,226 +21,257 @@
     <title>员工信息 - 查询</title>
 </head>
 <body>
-    <div id="wrapper">
-        <!-- Sidebar -->
-        <div id="sidebar-wrapper">
-            <ul class="sidebar-nav">
-                <li class="sidebar-brand"><a href="#">员工信息</a></li>
-                <li>
-                    <ul class="sidebar-subnav">
-                        <li><a href="queryEmployee.html">查询员工信息</a></li>
-						<li><a href="addEmployee.html">添加员工信息</a></li>
-						<li><a href="addEmployee2.html">添加员工信息（Excel）</a></li>
-						<li><a href="dimissionEmployee.html">员工离职</a></li>
-                    </ul>
-                </li>
+<div id="wrapper">
+<!-- Sidebar -->
+<div id="sidebar-wrapper">
+    <ul class="sidebar-nav">
+        <li class="sidebar-brand"><a href="#">员工信息</a></li>
+        <li>
+            <ul class="sidebar-subnav">
+                <li><a href="queryEmployee.html">查询员工信息</a></li>
+                <li><a href="addEmployee.html">添加员工信息</a></li>
+                <li><a href="importEmployee.html">添加员工信息（Excel）</a></li>
+                <li><a href="dimissionEmployee.html">员工离职</a></li>
             </ul>
-		</div>
+        </li>
+    </ul>
+</div>
 
-      <div id="page-content-wrapper">
-        <div class="content-header">
-            <h1>员工信息 - 查询</h1>
+<div id="page-content-wrapper">
+<div class="content-header">
+    <h1>员工信息 - 查询</h1>
+</div>
+<div style="padding: 20px;">
+
+<form class="form-horizontal" role="form">
+    <div class="form-group">
+        <label class="col-sm-1 control-label" for="exampleInputEmail2">工号</label>
+
+        <div class="col-sm-2">
+            <input type="text" class="form-control" id="exampleInputEmail2" placeholder="工号"/>
         </div>
-        <div style="padding: 20px;">
+        <label class="col-sm-1 control-label" for="exampleInputEmail2">商户工号</label>
 
-            <form class="form-horizontal" role="form">
-                <div class="form-group">
-                    <label class="col-sm-1 control-label" for="exampleInputEmail2">工号</label>
-                    <div class="col-sm-2">
-                        <input type="text" class="form-control" id="exampleInputEmail2" placeholder="工号" />
-                    </div>
-                    <label class="col-sm-1 control-label" for="exampleInputEmail2">商户工号</label>
-                    <div class="col-sm-2">
-                        <input type="text" class="form-control" id="exampleInputEmail2" placeholder="商户工号" />
-                    </div>
-					<label class="col-sm-1 control-label" for="exampleInputEmail2">姓名</label>
-                    <div class="col-sm-2">
-                        <input type="text" class="form-control" id="exampleInputEmail2" placeholder="姓名" />
-                    </div>
-                    <label class="col-sm-1 control-label" for="exampleInputEmail2">身份证号</label>
-                    <div class="col-sm-2">
-                        <input type="text" class="form-control" id="exampleInputEmail2" placeholder="身份证号" />
-                    </div>
-                </div>
-				<div class="form-group">
-                        <label class="col-sm-1 control-label" for="exampleInputEmail2">所属一级商户</label>
-                        <div class="col-sm-2">
-                            <select class="form-control">
-								<option value="">无</option>
-                                <option value="韵达">韵达</option>
-                                <option value="爱茵美">爱茵美</option>
-                            </select>
-                        </div>
-                        <label class="col-sm-1 control-label" for="exampleInputEmail2">所属二级商户</label>
-                        <div class="col-sm-2">
-                            <select class="form-control">
-								<option value="">无</option>
-                                <option value="韵达">韵达</option>
-                                <option value="爱茵美">爱茵美</option>
-                            </select>
-                        </div>
-						<label class="col-sm-1 control-label" for="exampleInputEmail2">所属三级商户</label>
-                        <div class="col-sm-2">
-                            <select class="form-control">
-								<option value="">无</option>
-                                <option value="韵达">韵达</option>
-                                <option value="爱茵美">爱茵美</option>
-                            </select>
-                        </div>
-                    </div>
-				<div class="form-group">
-                        <label class="col-sm-1 control-label" for="exampleInputEmail2">合同起始日期</label>
-                        <div class="col-sm-2">
-                            <input type="text" class="form-control date" id="exampleInputEmail2" placeholder="" data-date-format="yyyy-mm-dd"/>
-                        </div>
-                        <label class="control-label col-sm-1">至</label>
-                        <div class="col-sm-2">
-                            <input type="text" class="form-control date" id="exampleInputEmail2" placeholder="" data-date-format="yyyy-mm-dd"/>
-                        </div>
-                    </div>
-				<div class="form-group">
-                        <label class="col-sm-1 control-label" for="exampleInputEmail2">合同到期日期</label>
-                        <div class="col-sm-2">
-                            <input type="text" class="form-control date" id="exampleInputEmail2" placeholder="" data-date-format="yyyy-mm-dd"/>
-                        </div>
-                        <label class="control-label col-sm-1">至</label>
-                        <div class="col-sm-2">
-                            <input type="text" class="form-control date" id="exampleInputEmail2" placeholder="" data-date-format="yyyy-mm-dd"/>
-                        </div>
-                    </div>
-					
-					<div class="form-group">
-                        <label class="col-sm-1 control-label" for="exampleInputEmail2">社保参保日期</label>
-                        <div class="col-sm-2">
-                            <input type="text" class="form-control date" id="exampleInputEmail2" placeholder="" data-date-format="yyyy-mm-dd"/>
-                        </div>
-                        <label class="control-label col-sm-1">至</label>
-                        <div class="col-sm-2">
-                            <input type="text" class="form-control date" id="exampleInputEmail2" placeholder="" data-date-format="yyyy-mm-dd"/>
-                        </div>
-                    </div>
-					
-					<div class="form-group">
-                        <label class="col-sm-1 control-label" for="exampleInputEmail2">社保停保日期</label>
-                        <div class="col-sm-2">
-                            <input type="text" class="form-control date" id="exampleInputEmail2" placeholder="" data-date-format="yyyy-mm-dd"/>
-                        </div>
-                        <label class="control-label col-sm-1">至</label>
-                        <div class="col-sm-2">
-                            <input type="text" class="form-control date" id="exampleInputEmail2" placeholder="" data-date-format="yyyy-mm-dd"/>
-                        </div>
-                    </div>
-					
-					<div class="form-group">
-                        <label class="col-sm-1 control-label" for="exampleInputEmail2">缴纳城市</label>
-                        <div class="col-sm-2">
-                            <select class="form-control">
-								<option value="">无</option>
-                                <option value="北京">北京</option>
-                                <option value="上海">上海</option>
-                            </select>
-                        </div>
-                        <label class="col-sm-1 control-label" for="exampleInputEmail2">保险帐套</label>
-                        <div class="col-sm-2">
-                            <select class="form-control">
-								<option value="">无</option>
-                                <option value="韵达">北京三险</option>
-                                <option value="爱茵美">上海五险</option>
-                            </select>
-                        </div>
-                    </div>
-					
-					<div class="form-group">
-                        <label class="col-sm-1 control-label" for="exampleInputEmail2">离职日期</label>
-                        <div class="col-sm-2">
-                            <input type="text" class="form-control date" id="exampleInputEmail2" placeholder="" data-date-format="yyyy-mm-dd" name="aaa"/>
-                        </div>
-                        <label class="control-label col-sm-1">至</label>
-                        <div class="col-sm-2">
-                            <input type="text" class="form-control date" id="exampleInputEmail2" placeholder="" data-date-format="yyyy-mm-dd"/>
-                        </div>
-                    </div>
-					
-                <div class="form-group">
-                    <div class="col-sm-1"> </div>
-                    <div class="col-sm-2">
-                        <button type="submit" class="btn btn-primary"> 查询 </button>
-                    </div>
-                </div>
-            </form>
-           
-            <table class="table table-striped">
-            <thead>
-                <tr>
-                    <th>姓名</th>
-					<th>出生日期</th>
-                    <th>工号</th>
-                    <th>商户工号</th>
-                    <th>所属商户</th>
-                    <th>离职日期</th>
-                    <th>操作</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>史唯实</td>
-                    <td>1988-09-14</td>
-                    <td>001</td>
-                    <td>A0131</td>
-                    <td>韵达-北京韵达-北京怀柔韵达</td>
-                    <td>2013-10-10</td>
-                    <td><a href="#">查看</a> <a href="#">修改</a></td>
-                </tr>
-                <tr>
-                    <td>史唯实</td>
-                    <td>1988-09-14</td>
-                    <td>001</td>
-                    <td>A0131</td>
-                    <td>韵达-北京韵达-北京怀柔韵达</td>
-                    <td>---</td>
-                    <td><a href="#">查看</a> <a href="#">修改</a></td>
-                </tr>
-				<tr>
-                    <td>史唯实</td>
-                    <td>1988-09-14</td>
-                    <td>001</td>
-                    <td>A0131</td>
-                    <td>韵达-北京韵达-北京怀柔韵达</td>
-                    <td>2013-10-10</td>
-                    <td><a href="#">查看</a> <a href="#">修改</a></td>
-                </tr>
-				<tr>
-                    <td>史唯实</td>
-                    <td>1988-09-14</td>
-                    <td>001</td>
-                    <td>A0131</td>
-                    <td>韵达-北京韵达-北京怀柔韵达</td>
-                    <td>2013-10-10</td>
-                    <td><a href="#">查看</a> <a href="#">修改</a></td>
-                </tr>
-				<tr>
-                    <td>史唯实</td>
-                    <td>1988-09-14</td>
-                    <td>001</td>
-                    <td>A0131</td>
-                    <td>韵达-北京韵达-北京怀柔韵达</td>
-                    <td>2013-10-10</td>
-                    <td><a href="#">查看</a> <a href="#">修改</a></td>
-                </tr>
-				<tr>
-                    <td>史唯实</td>
-                    <td>1988-09-14</td>
-                    <td>001</td>
-                    <td>A0131</td>
-                    <td>韵达-北京韵达-北京怀柔韵达</td>
-                    <td>2013-10-10</td>
-                    <td><a href="#">查看</a> <a href="#">修改</a></td>
-                </tr>
-            </tbody>
-        </table>
-        <div class="clearfix">
-            <div class="pull-right">
-                <div class=""><div class="pagination-inner"><ul class="pagination">
+        <div class="col-sm-2">
+            <input type="text" class="form-control" id="exampleInputEmail2" placeholder="商户工号"/>
+        </div>
+        <label class="col-sm-1 control-label" for="exampleInputEmail2">姓名</label>
+
+        <div class="col-sm-2">
+            <input type="text" class="form-control" id="exampleInputEmail2" placeholder="姓名"/>
+        </div>
+        <label class="col-sm-1 control-label" for="exampleInputEmail2">身份证号</label>
+
+        <div class="col-sm-2">
+            <input type="text" class="form-control" id="exampleInputEmail2" placeholder="身份证号"/>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-1 control-label" for="exampleInputEmail2">所属一级商户</label>
+
+        <div class="col-sm-2">
+            <select class="form-control">
+                <option value="">无</option>
+                <option value="韵达">韵达</option>
+                <option value="爱茵美">爱茵美</option>
+            </select>
+        </div>
+        <label class="col-sm-1 control-label" for="exampleInputEmail2">所属二级商户</label>
+
+        <div class="col-sm-2">
+            <select class="form-control">
+                <option value="">无</option>
+                <option value="韵达">韵达</option>
+                <option value="爱茵美">爱茵美</option>
+            </select>
+        </div>
+        <label class="col-sm-1 control-label" for="exampleInputEmail2">所属三级商户</label>
+
+        <div class="col-sm-2">
+            <select class="form-control">
+                <option value="">无</option>
+                <option value="韵达">韵达</option>
+                <option value="爱茵美">爱茵美</option>
+            </select>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-1 control-label" for="exampleInputEmail2">合同起始日期</label>
+
+        <div class="col-sm-2">
+            <input type="text" class="form-control date" id="exampleInputEmail2" placeholder=""
+                   data-date-format="yyyy-mm-dd"/>
+        </div>
+        <label class="control-label col-sm-1">至</label>
+
+        <div class="col-sm-2">
+            <input type="text" class="form-control date" id="exampleInputEmail2" placeholder=""
+                   data-date-format="yyyy-mm-dd"/>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-1 control-label" for="exampleInputEmail2">合同到期日期</label>
+
+        <div class="col-sm-2">
+            <input type="text" class="form-control date" id="exampleInputEmail2" placeholder=""
+                   data-date-format="yyyy-mm-dd"/>
+        </div>
+        <label class="control-label col-sm-1">至</label>
+
+        <div class="col-sm-2">
+            <input type="text" class="form-control date" id="exampleInputEmail2" placeholder=""
+                   data-date-format="yyyy-mm-dd"/>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="col-sm-1 control-label" for="exampleInputEmail2">社保参保日期</label>
+
+        <div class="col-sm-2">
+            <input type="text" class="form-control date" id="exampleInputEmail2" placeholder=""
+                   data-date-format="yyyy-mm-dd"/>
+        </div>
+        <label class="control-label col-sm-1">至</label>
+
+        <div class="col-sm-2">
+            <input type="text" class="form-control date" id="exampleInputEmail2" placeholder=""
+                   data-date-format="yyyy-mm-dd"/>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="col-sm-1 control-label" for="exampleInputEmail2">社保停保日期</label>
+
+        <div class="col-sm-2">
+            <input type="text" class="form-control date" id="exampleInputEmail2" placeholder=""
+                   data-date-format="yyyy-mm-dd"/>
+        </div>
+        <label class="control-label col-sm-1">至</label>
+
+        <div class="col-sm-2">
+            <input type="text" class="form-control date" id="exampleInputEmail2" placeholder=""
+                   data-date-format="yyyy-mm-dd"/>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="col-sm-1 control-label" for="exampleInputEmail2">缴纳城市</label>
+
+        <div class="col-sm-2">
+            <select class="form-control">
+                <option value="">无</option>
+                <option value="北京">北京</option>
+                <option value="上海">上海</option>
+            </select>
+        </div>
+        <label class="col-sm-1 control-label" for="exampleInputEmail2">保险帐套</label>
+
+        <div class="col-sm-2">
+            <select class="form-control">
+                <option value="">无</option>
+                <option value="韵达">北京三险</option>
+                <option value="爱茵美">上海五险</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="col-sm-1 control-label" for="exampleInputEmail2">离职日期</label>
+
+        <div class="col-sm-2">
+            <input type="text" class="form-control date" id="exampleInputEmail2" placeholder=""
+                   data-date-format="yyyy-mm-dd" name="aaa"/>
+        </div>
+        <label class="control-label col-sm-1">至</label>
+
+        <div class="col-sm-2">
+            <input type="text" class="form-control date" id="exampleInputEmail2" placeholder=""
+                   data-date-format="yyyy-mm-dd"/>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-2">
+            <button type="submit" class="btn btn-primary"> 查询</button>
+        </div>
+    </div>
+</form>
+
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th>姓名</th>
+        <th>出生日期</th>
+        <th>工号</th>
+        <th>商户工号</th>
+        <th>所属商户</th>
+        <th>离职日期</th>
+        <th>操作</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>史唯实</td>
+        <td>1988-09-14</td>
+        <td>001</td>
+        <td>A0131</td>
+        <td>韵达-北京韵达-北京怀柔韵达</td>
+        <td>2013-10-10</td>
+        <td><a href="#">查看</a> <a href="#">修改</a></td>
+    </tr>
+    <tr>
+        <td>史唯实</td>
+        <td>1988-09-14</td>
+        <td>001</td>
+        <td>A0131</td>
+        <td>韵达-北京韵达-北京怀柔韵达</td>
+        <td>---</td>
+        <td><a href="#">查看</a> <a href="#">修改</a></td>
+    </tr>
+    <tr>
+        <td>史唯实</td>
+        <td>1988-09-14</td>
+        <td>001</td>
+        <td>A0131</td>
+        <td>韵达-北京韵达-北京怀柔韵达</td>
+        <td>2013-10-10</td>
+        <td><a href="#">查看</a> <a href="#">修改</a></td>
+    </tr>
+    <tr>
+        <td>史唯实</td>
+        <td>1988-09-14</td>
+        <td>001</td>
+        <td>A0131</td>
+        <td>韵达-北京韵达-北京怀柔韵达</td>
+        <td>2013-10-10</td>
+        <td><a href="#">查看</a> <a href="#">修改</a></td>
+    </tr>
+    <tr>
+        <td>史唯实</td>
+        <td>1988-09-14</td>
+        <td>001</td>
+        <td>A0131</td>
+        <td>韵达-北京韵达-北京怀柔韵达</td>
+        <td>2013-10-10</td>
+        <td><a href="#">查看</a> <a href="#">修改</a></td>
+    </tr>
+    <tr>
+        <td>史唯实</td>
+        <td>1988-09-14</td>
+        <td>001</td>
+        <td>A0131</td>
+        <td>韵达-北京韵达-北京怀柔韵达</td>
+        <td>2013-10-10</td>
+        <td><a href="#">查看</a> <a href="#">修改</a></td>
+    </tr>
+    </tbody>
+</table>
+<div class="clearfix">
+    <div class="pull-right">
+        <div class="">
+            <div class="pagination-inner">
+                <ul class="pagination">
                     <li class=" active"><a href="/tools/speed/index?">1</a></li>
                     <li class=""><a href="/tools/speed/index?page_no=2">2</a></li>
                     <li class=""><a href="/tools/speed/index?page_no=3">3</a></li>
@@ -249,16 +279,19 @@
                     <li class=""><a href="/tools/speed/index?page_no=5">5</a></li>
                     <li class=""><a href="/tools/speed/index?page_no=6">6</a></li>
                     <li class=""><a href="/tools/speed/index?page_no=2">下一页</a></li>
-                </ul></div></div>    </div>
+                </ul>
             </div>
-
-        </div>
-
-        <div class="inset">
-            <hr/>
-            <strong>@Baidu</strong> Email: pengxing@baidu.com
         </div>
     </div>
+</div>
+
+</div>
+
+<div class="inset">
+    <hr/>
+    <strong>@Baidu</strong> Email: pengxing@baidu.com
+</div>
+</div>
 </div>
 </body>
 </html>

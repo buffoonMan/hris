@@ -2,13 +2,13 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
-    <meta name="author" content="; sekiyika" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="; sekiyika"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <link rel="SHORTCUT ICON" href="http://www.baidu.com/favicon.ico">
-    <link rel="stylesheet" type="text/css" href="style/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="style/docs.css" />
-    <link rel="stylesheet" type="text/css" href="style/sidebar.css" />
-    <link rel="stylesheet" type="text/css" href="style/datepicker.css" />
+    <link rel="stylesheet" type="text/css" href="style/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="style/docs.css"/>
+    <link rel="stylesheet" type="text/css" href="style/sidebar.css"/>
+    <link rel="stylesheet" type="text/css" href="style/datepicker.css"/>
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/bootstrap.js"></script>
     <script type="text/javascript" src="js/bootstrap-datepicker.js"></script>
@@ -16,214 +16,222 @@
     <title>财务对账 - 补缴/退费查询</title>
 </head>
 <body>
-    <div id="wrapper">
-        <!-- Sidebar -->
-        <div id="sidebar-wrapper">
-            <ul class="sidebar-nav">
-                <li class="sidebar-brand"><a href="#">补缴退费查询</a></li>
-                <li>
-                    <ul class="sidebar-subnav">
-                        <li><a href="querySupplymentary.html">查询补缴退费</a></li>
-						<li><a href="addSupplymentary.html">添加补缴退费</a></li>
-                        <li><a href="index.html">返回首页</a></li>
-                    </ul>
-                </li>
+<div id="wrapper">
+<!-- Sidebar -->
+<div id="sidebar-wrapper">
+    <ul class="sidebar-nav">
+        <li class="sidebar-brand"><a href="#">补缴退费查询</a></li>
+        <li>
+            <ul class="sidebar-subnav">
+                <li><a href="querySupplymentary.html">查询补缴退费</a></li>
+                <li><a href="addSupplymentary.html">添加补缴退费</a></li>
+                <li><a href="index.html">返回首页</a></li>
             </ul>
-		</div>
+        </li>
+    </ul>
+</div>
 
-        <div id="page-content-wrapper">
-            <div class="content-header">
-                <h1>财务对账 - 补缴/退费查询</h1>
-            </div>
-            <div style="padding: 20px;">
+<div id="page-content-wrapper">
+    <div class="content-header">
+        <h1>财务对账 - 补缴/退费查询</h1>
+    </div>
+    <div style="padding: 20px;">
 
-                <form class="form-horizontal" role="form">
-                    <div class="form-group">
-                        <label class="col-sm-1 control-label" for="addType">工号</label>
-                         <div class="col-sm-2">
-                            <input type="text" class="form-control" id="exampleInputEmail2" placeholder="10001254" />
-                        </div>
-                    <!--     <button type="button" class="btn btn-default pull-left invisible">参照</button> -->
-                        <label class="col-sm-1 control-label">姓名</label>
-                        <div class="col-sm-2">
-                            <input type="text" class="form-control" id="exampleInputEmail2" placeholder="马三立" />
-                        </div>
-						
-						 <label class="col-sm-1 control-label">功能选择</label>
-                        <div class="col-sm-2">
-                       <select type="text" class="form-control" id="holderlev" placeholder="客户层级" >
-                           <option> 补缴</option>
-						   <option> 退费</option>
-						   
-						   </select>
-                        </div>
-						      			
-                        <label class="col-sm-1 control-label" for="holderlev">补缴开始月份</label>
-                           <div class="col-sm-2">
-                       <input type="text" class="date form-control" id="exampleInputEmail2" placeholder="只能在1号生效" data-date-format="yyyy-mm-dd"/>
-						</div>
+        <form class="form-horizontal" role="form">
+            <div class="form-group">
+                <label class="col-sm-1 control-label" for="addType">工号</label>
 
-		      </div>
-						      			
-                 
-                    <div class="form-group">
-					       <label class=" col-sm-1 control-label" for="holderlev">一级商户代码</label>
-                               <div class="col-sm-2">
-                            <input type="text" class="form-control" id="exampleInputEmail2" placeholder="输入一级商户代码" />
-                        </div>
-						 <label class=" col-sm-1 control-label" for="holderlev">二级商户代码</label>
-                               <div class="col-sm-2">
-                            <input type="text" class="form-control" id="exampleInputEmail2" placeholder="输入二级商户代码" />
-                        </div>
-						<label class=" col-sm-1 control-label" for="holderlev">三级商户代码</label>
-                               <div class="col-sm-2">
-                            <input type="text" class="form-control" id="exampleInputEmail2" placeholder="输入三级商户代码" />
-                        </div>
-                    </div>
-                       
-                    
-                </form>
-
-                    <div class="form-group">
-                        <div class="col-sm-1"> </div>
-                        <div class="col-sm-2">
-                            <button type="submit" class="btn btn-primary">查询</button>
-                            <button type="submit" class="btn btn-primary">清除</button>
-                        </div>
-
-                    </div>
+                <div class="col-sm-2">
+                    <input type="text" class="form-control" id="exampleInputEmail2" placeholder="10001254"/>
                 </div>
-            <table class="table table-striped">
-                <thead>
-                <tr>
+                <!--     <button type="button" class="btn btn-default pull-left invisible">参照</button> -->
+                <label class="col-sm-1 control-label">姓名</label>
 
-                    <th>序号</th>
-                    <th>补缴开始月份</th>
-                    <th>工号</th>
-                    <th>姓名</th>
-                    <th>补缴/退费</th>
-                    <th>所属一级商户</th>
-                    <th>所属二级商户</th>
-                    <th>所属三级商户</th>
-                    <th>金额</th>
-                    <th>备注</th>
+                <div class="col-sm-2">
+                    <input type="text" class="form-control" id="exampleInputEmail2" placeholder="马三立"/>
+                </div>
 
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <th>1</th>
-                    <th>2014-07-01</th>
-                    <th>100010230</th>
-                    <th>张三</th>
-                    <th>补缴</th>
-                    <th>韵达集团</th>
-                    <th>青岛分拨中心</th>
-                    <th></th>
-                    <th>300</th>
-                    <th>六月社保</th>
-                </tr>
-                <tr>
-                    <th>2</th>
-                    <th>2014-07-01</th>
-                    <th>100010233</th>
-                    <th>李四</th>
-                    <th>补缴</th>
-                    <th>韵达集团</th>
-                    <th></th>
-                    <th>油麻地分拨中心</th>
-                    <th>800</th>
-                    <th>补四、五月社保</th>
-                </tr>
-                <tr>
-                    <th>3</th>
-                    <th>2014-07-01</th>
-                    <th>100010233</th>
-                    <th>王二狗</th>
-                    <th>退费</th>
-                    <th>韵达集团</th>
-                    <th>山西分拨中心</th>
-                    <th>某某分拨中心</th>
-                    <th>800</th>
-                    <th>补四、五月社保</th>
-                </tr>
-                </tbody>
-            </table>
-               <!--  <ol>
-                    <li>“对账确认”：业务运营人员确认结算单后，商家即能查看到当期结算信息。商家操作“对账确认”，则微购财务可进行打款操作；（此处对账确认标识单独在结算单中处理，非结算单状态）标准流程：商家对账确认后，财务打款；但暂不要求商家必须三个工作日内跟进操作确认，只要商家五个工作日内未反馈则财务视为商家确认，直接进行打款确认；</li>
-                    <li>“明细下载”即结算期间的可结订单明细；</li>
-                </ol> -->
-                <br/>
+                <label class="col-sm-1 control-label">功能选择</label>
 
-                <!-- <h3>明细下载信息</h3>
-                <table class="table table-striped">
-                    <thead>
-                        <tr>
-                            <th>序号</th>
-                            <th>订单号</th>
-                            <th>商家ID</th>
-                            <th>商家名称</th>
-                            <th>订单支付金额</th>
-                            <th>退款金额</th>
-                            <th>手续费</th>
-                            <th>支付完成日期</th>
-                            <th>确认收货日期</th>
-                            <th>退款商家审批日期</th>
-                            <th>支付类型</th>
-                            <th>订单状态</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td></td>
-                            <td></td>
-                            <td>京东</td>
-                            <td>￥100</td>
-                            <td>￥0.6</td>
-                            <td>￥0.6</td>
-                            <td>2014-01-12</td>
-                            <td>2014-01-12</td>
-                            <td>2014-01-12</td>
-                            <td>百付宝</td>
-                            <td>等待发货</td>
-                        </tr>
-                        <tr>
-                            <td>1</td>
-                            <td></td>
-                            <td></td>
-                            <td>京东</td>
-                            <td>￥100</td>
-                            <td>￥0.6</td>
-                            <td>￥0.6</td>
-                            <td>2014-01-12</td>
-                            <td>2014-01-12</td>
-                            <td>2014-01-12</td>
-                            <td>百付宝</td>
-                            <td>等待发货</td>
-                        </tr>
-                        <tr>
-                            <td>1</td>
-                            <td></td>
-                            <td></td>
-                            <td>京东</td>
-                            <td>￥100</td>
-                            <td>￥0.6</td>
-                            <td>￥0.6</td>
-                            <td>2014-01-12</td>
-                            <td>2014-01-12</td>
-                            <td>2014-01-12</td>
-                            <td>百付宝</td>
-                            <td>等待发货</td>
-                        </tr>
-                    </tbody>
-                </table> -->
+                <div class="col-sm-2">
+                    <select type="text" class="form-control" id="holderlev" placeholder="客户层级">
+                        <option> 补缴</option>
+                        <option> 退费</option>
 
-                <div class="inset">
-                    <hr/>
-                    <strong>@facewin.com.cn</strong> Email: shiweishi@facewin.com.cn
+                    </select>
+                </div>
+
+                <label class="col-sm-1 control-label" for="holderlev">补缴开始月份</label>
+
+                <div class="col-sm-2">
+                    <input type="text" class="date form-control" id="exampleInputEmail2" placeholder="只能在1号生效"
+                           data-date-format="yyyy-mm-dd"/>
+                </div>
+
+            </div>
+
+
+            <div class="form-group">
+                <label class=" col-sm-1 control-label" for="holderlev">一级商户代码</label>
+
+                <div class="col-sm-2">
+                    <input type="text" class="form-control" id="exampleInputEmail2" placeholder="输入一级商户代码"/>
+                </div>
+                <label class=" col-sm-1 control-label" for="holderlev">二级商户代码</label>
+
+                <div class="col-sm-2">
+                    <input type="text" class="form-control" id="exampleInputEmail2" placeholder="输入二级商户代码"/>
+                </div>
+                <label class=" col-sm-1 control-label" for="holderlev">三级商户代码</label>
+
+                <div class="col-sm-2">
+                    <input type="text" class="form-control" id="exampleInputEmail2" placeholder="输入三级商户代码"/>
                 </div>
             </div>
+
+
+        </form>
+
+        <div class="form-group">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-2">
+                <button type="submit" class="btn btn-primary">查询</button>
+                <button type="submit" class="btn btn-primary">清除</button>
+            </div>
+
         </div>
-    </body>
-    </html>
+    </div>
+    <table class="table table-striped">
+        <thead>
+        <tr>
+
+            <th>序号</th>
+            <th>补缴开始月份</th>
+            <th>工号</th>
+            <th>姓名</th>
+            <th>补缴/退费</th>
+            <th>所属一级商户</th>
+            <th>所属二级商户</th>
+            <th>所属三级商户</th>
+            <th>金额</th>
+            <th>备注</th>
+
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th>1</th>
+            <th>2014-07-01</th>
+            <th>100010230</th>
+            <th>张三</th>
+            <th>补缴</th>
+            <th>韵达集团</th>
+            <th>青岛分拨中心</th>
+            <th></th>
+            <th>300</th>
+            <th>六月社保</th>
+        </tr>
+        <tr>
+            <th>2</th>
+            <th>2014-07-01</th>
+            <th>100010233</th>
+            <th>李四</th>
+            <th>补缴</th>
+            <th>韵达集团</th>
+            <th></th>
+            <th>油麻地分拨中心</th>
+            <th>800</th>
+            <th>补四、五月社保</th>
+        </tr>
+        <tr>
+            <th>3</th>
+            <th>2014-07-01</th>
+            <th>100010233</th>
+            <th>王二狗</th>
+            <th>退费</th>
+            <th>韵达集团</th>
+            <th>山西分拨中心</th>
+            <th>某某分拨中心</th>
+            <th>800</th>
+            <th>补四、五月社保</th>
+        </tr>
+        </tbody>
+    </table>
+    <!--  <ol>
+         <li>“对账确认”：业务运营人员确认结算单后，商家即能查看到当期结算信息。商家操作“对账确认”，则微购财务可进行打款操作；（此处对账确认标识单独在结算单中处理，非结算单状态）标准流程：商家对账确认后，财务打款；但暂不要求商家必须三个工作日内跟进操作确认，只要商家五个工作日内未反馈则财务视为商家确认，直接进行打款确认；</li>
+         <li>“明细下载”即结算期间的可结订单明细；</li>
+     </ol> -->
+    <br/>
+
+    <!-- <h3>明细下载信息</h3>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>序号</th>
+                <th>订单号</th>
+                <th>商家ID</th>
+                <th>商家名称</th>
+                <th>订单支付金额</th>
+                <th>退款金额</th>
+                <th>手续费</th>
+                <th>支付完成日期</th>
+                <th>确认收货日期</th>
+                <th>退款商家审批日期</th>
+                <th>支付类型</th>
+                <th>订单状态</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td></td>
+                <td></td>
+                <td>京东</td>
+                <td>￥100</td>
+                <td>￥0.6</td>
+                <td>￥0.6</td>
+                <td>2014-01-12</td>
+                <td>2014-01-12</td>
+                <td>2014-01-12</td>
+                <td>百付宝</td>
+                <td>等待发货</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td></td>
+                <td></td>
+                <td>京东</td>
+                <td>￥100</td>
+                <td>￥0.6</td>
+                <td>￥0.6</td>
+                <td>2014-01-12</td>
+                <td>2014-01-12</td>
+                <td>2014-01-12</td>
+                <td>百付宝</td>
+                <td>等待发货</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td></td>
+                <td></td>
+                <td>京东</td>
+                <td>￥100</td>
+                <td>￥0.6</td>
+                <td>￥0.6</td>
+                <td>2014-01-12</td>
+                <td>2014-01-12</td>
+                <td>2014-01-12</td>
+                <td>百付宝</td>
+                <td>等待发货</td>
+            </tr>
+        </tbody>
+    </table> -->
+
+    <div class="inset">
+        <hr/>
+        <strong>@facewin.com.cn</strong> Email: shiweishi@facewin.com.cn
+    </div>
+</div>
+</div>
+</body>
+</html>

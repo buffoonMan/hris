@@ -1,15 +1,14 @@
-
 <!doctype html>
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
-    <meta name="author" content="; sekiyika" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="; sekiyika"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <link rel="SHORTCUT ICON" href="http://www.baidu.com/favicon.ico">
-    <link rel="stylesheet" type="text/css" href="style/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="style/docs.css" />
-    <link rel="stylesheet" type="text/css" href="style/sidebar.css" />
-    <link rel="stylesheet" type="text/css" href="style/datepicker.css" />
+    <link rel="stylesheet" type="text/css" href="style/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="style/docs.css"/>
+    <link rel="stylesheet" type="text/css" href="style/sidebar.css"/>
+    <link rel="stylesheet" type="text/css" href="style/datepicker.css"/>
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/bootstrap.js"></script>
     <script type="text/javascript" src="js/bootstrap-datepicker.js"></script>
@@ -17,127 +16,133 @@
     <title>商户信息 - 修改</title>
 </head>
 <body>
-    <div id="wrapper">
-        <!-- Sidebar -->
-        <div id="sidebar-wrapper">
-            <ul class="sidebar-nav">
-                <li class="sidebar-brand"><a href="#">商户管理</a></li>
-                <li>
-                    <ul class="sidebar-subnav">
-                        <li><a href="queryHolder.html">查询商户信息</a></li>
-                        <li><a href="addNewHolder.html">添加商户信息</a></li>
-                        <li><a href="improtNewHolder.html">添加商户信息（Excel）</a></li>
-                        <li><a href="index.html">返回首页</a></li>
-                    </ul>
-                </li>
-            </ul>
+<div id="wrapper">
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <li class="sidebar-brand"><a href="#">商户管理</a></li>
+            <li>
+                <ul class="sidebar-subnav">
+                    <li><a href="queryHolder.html">查询商户信息</a></li>
+                    <li><a href="addNewHolder.html">添加商户信息</a></li>
+                    <li><a href="improtNewHolder.html">添加商户信息（Excel）</a></li>
+                    <li><a href="index.html">返回首页</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div id="page-content-wrapper">
+
+        <div class="content-header">
+            <h1>修改商户信息</h1>
         </div>
+        <div style="padding: 20px;">
 
-        <div id="page-content-wrapper">
-                                
-		   <div class="content-header">
-                <h1>修改商户信息</h1>
+            <form class="form-horizontal" role="form">
+                <div class="form-group">
+                    <label class="col-sm-1 control-label" for="exampleInputEmail2">商户代码</label>
+
+                    <div class="col-sm-2">
+                        <input type="text" class="form-control" id="inputholdername" placeholder="00110010001"/>
+                    </div>
+                    <label class="col-sm-1 control-label" for="exampleInputEmail2">商户名称</label>
+
+                    <div class="col-sm-2">
+                        <input type="text" class="form-control" id="inputholdername" placeholder="韵达总部"/>
+                    </div>
+
+                    <label class="col-sm-1 control-label" for="inputholderloca">商户经营地</label>
+
+                    <div class="col-sm-2">
+                        <input type="text" class="form-control" id="inputholderloca" placeholder="上海"/>
+
+                    </div>
+
+
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-1 control-label" for="holderlev">商户层级</label>
+
+                    <div class="col-sm-2">
+                        <select type="text" class="form-control" id="holderlev" placeholder="客户层级">
+                            <option> 1级</option>
+                            <option> 2级</option>
+                            <option> 3级</option>
+                        </select>
+                    </div>
+
+
+                    <label class="col-sm-1 control-label" for="fatherholder">所属父商户</label>
+
+                    <div class="col-sm-2">
+                        <select type="text" class="form-control " id="fatherholder" placeholder="所属父商户">
+                            <option> 韵达总部</option>
+                            <option> 韵达某分拨中心</option>
+                            <option> 贝因美总部</option>
+                        </select>
+
+
+                    </div>
+
+
+                    <label class="col-sm-1 control-label" for="stype">服务类别</label>
+
+                    <div class="col-sm-2">
+
+
+                        <select type="text" class="form-control " id="stype" placeholder="服务类别">
+                            <option> 代理</option>
+                            <option> 派遣</option>
+                            <option> 其他</option>
+                        </select>
+
+                    </div>
+                </div>
+                <div class="form-group">
+
+                    <label class="col-sm-1 control-label" for="ntype">开票类别</label>
+
+                    <div class="col-sm-2">
+                        <select type="text" class="form-control " id="ntype" placeholder="开票类别">
+                            <option> 增值税票</option>
+                            <option> 普通发票</option>
+                            <option> 其他</option>
+                        </select>
+                    </div>
+
+
+                    <label class="col-sm-1  control-label" for="smount">服务费价格</label>
+
+                    <div class="col-sm-2">
+                        <input type="text" class="form-control" id="smount" placeholder="服务费价格"/>
+                    </div>
+                    <label class="col-sm-1 control-label" for="contractbeg">合同起始时间</label>
+
+                    <div class="col-sm-2">
+                        <input type="text" class="date form-control" id="exampleInputEmail2" placeholder=""
+                               data-date-format="yyyy-mm-dd"/>
+
+
+                    </div>
+
+                    <label class="col-sm-1  control-label" for="contractend">合同结束时间</label>
+
+                    <div class="col-sm-2">
+                        <input type="text" class="date form-control" id="exampleInputEmail2" placeholder=""
+                               data-date-format="yyyy-mm-dd"/>
+
+
+                    </div>
+                </div>
+            </form>
+            <div class="form-group">
+                <div class="col-sm-6">
+                    <button type="button" class="btn btn-primary">保存</button>
+
+                    <button type="button" class="btn btn-danger">重置</button>
+                </div>
             </div>
-            <div style="padding: 20px;">
-
-                <form class="form-horizontal" role="form">
-                    <div class="form-group">
-                  <label class="col-sm-1 control-label" for="exampleInputEmail2">商户代码</label>
-            
-  <div class="col-sm-2">    
-                           <input type="text" class="form-control" id="inputholdername" placeholder="00110010001" />						 
-  </div>
-					 <label class="col-sm-1 control-label" for="exampleInputEmail2">商户名称</label>
-            
-  <div class="col-sm-2">    
-                           <input type="text" class="form-control" id="inputholdername" placeholder="韵达总部" />						 
-  </div>
-
-						<label class="col-sm-1 control-label" for="inputholderloca">商户经营地</label>
-                          <div class="col-sm-2">  
-                            <input type="text" class="form-control" id="inputholderloca" placeholder="上海" />
-                     
-</div>
-		        			
-                  
-			       			</div>
-							<div class="form-group">
-                        <label class="col-sm-1 control-label" for="holderlev">商户层级</label>
-                          <div class="col-sm-2">     
-                            <select type="text" class="form-control" id="holderlev" placeholder="客户层级" >
-                           <option> 1级</option>
-						   <option> 2级</option>
-						   <option> 3级</option>
-						   </select>
-			</div>	 
-					
-		        			
-                        <label class="col-sm-1 control-label" for="fatherholder">所属父商户</label>
-                        <div class="col-sm-2">  
-                            <select type="text" class="form-control " id="fatherholder" placeholder="所属父商户" >
-                           <option> 韵达总部</option>
-						   <option> 韵达某分拨中心</option>
-						   <option> 贝因美总部</option>
-						   </select>
-						
-
-			</div>
-
-		
-		
-						<label class="col-sm-1 control-label" for="stype">服务类别</label>
-							<div class="col-sm-2">          			
-                        
-                        
-                            <select type="text" class="form-control " id="stype" placeholder="服务类别" >
-                           <option> 代理</option>
-						   <option> 派遣</option>
-						   <option> 其他</option>
-						   </select>
-						
-						</div>
-							</div>
-							<div class="form-group">
-							       			
-                        <label class="col-sm-1 control-label" for="ntype">开票类别</label>
-                        
-						 <div class="col-sm-2"> 
-                           <select type="text" class="form-control " id="ntype" placeholder="开票类别" >
-                           <option> 增值税票</option>
-						   <option> 普通发票</option>
-						   <option> 其他</option>
-						   </select>
-						</div>
-						
-						
-                        <label class="col-sm-1  control-label" for="smount">服务费价格</label>
-                        	<div class="col-sm-2"> 
-								<input type="text" class="form-control" id="smount" placeholder="服务费价格" />
-							</div>
-							      <label class="col-sm-1 control-label" for="contractbeg">合同起始时间</label>
-                           <div class="col-sm-2">  
-                           <input type="text" class="date form-control" id="exampleInputEmail2" placeholder="" data-date-format="yyyy-mm-dd"/>
-                        
-						
-
-			</div>
-		       			
-                        <label class="col-sm-1  control-label" for="contractend">合同结束时间</label>
-                 <div class="col-sm-2">          
-                             <input type="text" class="date form-control" id="exampleInputEmail2" placeholder="" data-date-format="yyyy-mm-dd"/>
-                        
-						
-
-			</div>	
-			</div>	
-             </form>
-		<div class="form-group">
-		<div class="col-sm-6"> 
-                <button type="button" class="btn btn-primary">保存</button>
-				
-                <button type="button"  class="btn btn-danger">重置</button>
-            </div>
-</div>
             <div class="inset">
                 <hr/>
                 <strong>@facewin.com.cn</strong> Email: shiweishi@facewin.com.cn

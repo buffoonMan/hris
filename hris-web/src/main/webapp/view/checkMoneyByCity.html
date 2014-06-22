@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <meta name="author" content="; sekiyika"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <link rel="SHORTCUT ICON" href="http://www.baidu.com/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="style/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="style/docs.css"/>
+    <link rel="stylesheet" type="text/css" href="style/sidebar.css"/>
+    <link rel="stylesheet" type="text/css" href="style/datepicker.css"/>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/bootstrap-datepicker.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+    <title>城市对账</title>
+</head>
+<body>
+<div id="wrapper">
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <li class="sidebar-brand"><a href="#">城市对账</a></li>
+            <li>
+                <ul class="sidebar-subnav">
+                    <li><a href="index.html">返回首页</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div id="page-content-wrapper">
+        <div class="content-header">
+            <h1>城市对账</h1>
+        </div>
+        <div style="padding: 20px;">
+
+            <form class="form-horizontal" role="form">
+                <div class="form-group">
+                    <label class="col-sm-1 control-label">选择城市</label>
+
+                    <div class="col-sm-2">
+                        <select type="text" class="form-control" id="holderlev" placeholder="城市">
+                            <option>北京</option>
+                            <option>上海</option>
+                        </select>
+                    </div>
+                    <label class="col-sm-1 control-label" for="exampleInputEmail2">输入月份</label>
+
+                    <div class="col-sm-2">
+                        <input type="text" class="form-control" id="exampleInputEmail2" placeholder="如2014-05"/>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-2">
+                        <a href="checkMoneyByCity2.html" class="btn btn-primary">下一步</a>
+                        <!--<button type="submit" class="btn btn-primary">下一步</button>-->
+                    </div>
+
+                </div>
+            </form>
+            <div class="inset">
+                <hr/>
+                <strong>@facewin.com.cn</strong> Email: shiweishi@facewin.com.cn
+            </div>
+        </div>
+    </div>
+</body>
+</html>

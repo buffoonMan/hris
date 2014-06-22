@@ -17,143 +17,142 @@
 </head>
 <body>
 <div id="wrapper">
-<!-- Sidebar -->
-<div id="sidebar-wrapper">
-    <ul class="sidebar-nav">
-        <li class="sidebar-brand"><a href="#">每月请款</a></li>
-        <li>
-            <ul class="sidebar-subnav">
-                <li><a href="requestMoney.html">每月请款</a></li>
-                <li><a href="requestMoneyHistory.html">请款历史</a></li>
-                <li><a href="index.html">返回首页</a></li>
-            </ul>
-        </li>
-    </ul>
-</div>
-
-<div id="page-content-wrapper">
-<div class="content-header">
-    <h1>每月请款</h1>
-</div>
-<div style="padding: 20px;">
-
-<form class="form-horizontal" role="form">
-    <div class="form-group">
-        <label class="col-sm-1 control-label" for="exampleInputEmail2">商户代码</label>
-
-        <div class="col-sm-2">
-            <input type="text" class="form-control" id="exampleInputEmail2" placeholder="请输入商户代码"/>
-        </div>
-        <!--     <button type="button" class="btn btn-default pull-left invisible">参照</button> -->
-        <label class="col-sm-1 control-label">商户名称</label>
-
-        <div class="col-sm-2">
-            <input type="text" class="form-control" id="exampleInputEmail2" placeholder="模糊查询"/>
-        </div>
-
-        <label class="col-sm-1 control-label">商户经营地</label>
-
-        <div class="col-sm-2">
-            <input type="text" class="form-control" id="exampleInputEmail2" placeholder="模糊查询"/>
-        </div>
-
-    </div>
-
-    <div class="form-group">
-        <div class="col-sm-1"></div>
-        <div class="col-sm-2">
-            <button type="submit" class="btn btn-primary">查询</button>
-        </div>
-
-    </div>
-</form>
-
-<table class="table table-striped">
-    <thead>
-    <tr>
-        <th>选择<br/><input type="checkbox"/></th>
-        <th>序号</th>
-        <th>商户代码</th>
-        <th>商户名称</th>
-        <th>商户经营地</th>
-        <th>所属父商户</th>
-        <th>开票类别</th>
-        <th>服务类别</th>
-        <th>服务费价格</th>
-        <th>操作</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr>
-        <td><input type="checkbox"/></td>
-        <td>1</td>
-        <td>100010010</td>
-        <td>韵达总部</td>
-        <td>2012-10-1</td>
-        <td>上海</td>
-        <td>增值税票</td>
-        <td>派遣</td>
-        <td>80</td>
-        <td><a href="#">请款</a></td>
-    </tr>
-    <tr>
-        <td><input type="checkbox"/></td>
-        <td>2</td>
-        <td>1000010203</td>
-        <td>韵达北京分拨中心</td>
-        <td>2012-11-5</td>
-        <td>北京</td>
-        <td>普通发票</td>
-        <td>派遣</td>
-        <td>80</td>
-        <td><a href="#">请款</a></td>
-    </tr>
-    <tr>
-        <td><input type="checkbox"/></td>
-        <td>3</td>
-        <td>10000223</td>
-        <td>韵达石家庄分拨中心</td>
-        <td>2013-11-5</td>
-        <td>石家庄</td>
-        <td>普通发票</td>
-        <td>派遣</td>
-        <td>70</td>
-        <td><a href="#">请款</a></td>
-    </tr>
-    </tbody>
-</table>
-<div class="clearfix">
-    <div class="pull-right">
-        <div class="">
-            <div class="pagination-inner">
-                <ul class="pagination">
-
-                    <li class=" active"><a href="/tools/speed/index?">1</a></li>
-                    <li class=""><a href="/tools/speed/index?page_no=2">2</a></li>
-                    <li class=""><a href="/tools/speed/index?page_no=3">3</a></li>
-                    <li class=""><a href="/tools/speed/index?page_no=4">4</a></li>
-                    <li class=""><a href="/tools/speed/index?page_no=5">5</a></li>
-                    <li class=""><a href="/tools/speed/index?page_no=6">6</a></li>
-                    <li class=""><a href="/tools/speed/index?page_no=2">下一页</a></li>
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <li class="sidebar-brand"><a href="#">每月请款</a></li>
+            <li>
+                <ul class="sidebar-subnav">
+                    <li><a href="requestMoney.html">每月请款</a></li>
+                    <li><a href="requestMoneyHistory.html">请款历史</a></li>
+                    <li><a href="index.html">返回首页</a></li>
                 </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div id="page-content-wrapper">
+        <div class="content-header">
+            <h1>每月请款</h1>
+        </div>
+        <div style="padding: 20px;">
+
+            <form class="form-horizontal" role="form">
+                <div class="form-group">
+                    <label class="col-sm-1 control-label" for="exampleInputEmail2">商户代码</label>
+
+                    <div class="col-sm-2">
+                        <input type="text" class="form-control" id="exampleInputEmail2" placeholder="请输入商户代码"/>
+                    </div>
+                    <!--     <button type="button" class="btn btn-default pull-left invisible">参照</button> -->
+                    <label class="col-sm-1 control-label">商户名称</label>
+
+                    <div class="col-sm-2">
+                        <input type="text" class="form-control" id="exampleInputEmail2" placeholder="模糊查询"/>
+                    </div>
+
+                    <label class="col-sm-1 control-label">商户经营地</label>
+
+                    <div class="col-sm-2">
+                        <input type="text" class="form-control" id="exampleInputEmail2" placeholder="模糊查询"/>
+                    </div>
+
+                </div>
+
+                <div class="form-group">
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-2">
+                        <button type="submit" class="btn btn-primary">查询</button>
+                    </div>
+
+                </div>
+            </form>
+
+            <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th>选择<br/><input type="checkbox"/></th>
+                    <th>序号</th>
+                    <th>商户代码</th>
+                    <th>商户名称</th>
+                    <th>商户经营地</th>
+                    <th>所属父商户</th>
+                    <th>开票类别</th>
+                    <th>服务类别</th>
+                    <th>服务费价格</th>
+                    <th>操作</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td><input type="checkbox"/></td>
+                    <td>1</td>
+                    <td>100010010</td>
+                    <td>韵达总部</td>
+                    <td>2012-10-1</td>
+                    <td>上海</td>
+                    <td>增值税票</td>
+                    <td>派遣</td>
+                    <td>80</td>
+                    <td><a href="#">请款</a></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"/></td>
+                    <td>2</td>
+                    <td>1000010203</td>
+                    <td>韵达北京分拨中心</td>
+                    <td>2012-11-5</td>
+                    <td>北京</td>
+                    <td>普通发票</td>
+                    <td>派遣</td>
+                    <td>80</td>
+                    <td><a href="#">请款</a></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"/></td>
+                    <td>3</td>
+                    <td>10000223</td>
+                    <td>韵达石家庄分拨中心</td>
+                    <td>2013-11-5</td>
+                    <td>石家庄</td>
+                    <td>普通发票</td>
+                    <td>派遣</td>
+                    <td>70</td>
+                    <td><a href="#">请款</a></td>
+                </tr>
+                </tbody>
+            </table>
+            <div class="clearfix">
+                <div class="pull-right">
+                    <div class="">
+                        <div class="pagination-inner">
+                            <ul class="pagination">
+
+                                <li class=" active"><a href="/tools/speed/index?">1</a></li>
+                                <li class=""><a href="/tools/speed/index?page_no=2">2</a></li>
+                                <li class=""><a href="/tools/speed/index?page_no=3">3</a></li>
+                                <li class=""><a href="/tools/speed/index?page_no=4">4</a></li>
+                                <li class=""><a href="/tools/speed/index?page_no=5">5</a></li>
+                                <li class=""><a href="/tools/speed/index?page_no=6">6</a></li>
+                                <li class=""><a href="/tools/speed/index?page_no=2">下一页</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <ol>
+                <li>请款默认请当月。</li>
+                <li>请款不能跨月请款，如请四月份的款需保证3月份已请款完毕。</li>
+            </ol>
+            <br/>
+
+
+            <div class="inset">
+                <hr/>
+                <strong>@facewin.com.cn</strong> Email: shiweishi@facewin.com.cn
             </div>
         </div>
     </div>
-</div>
-
-  <ol>
-     <li>请款默认请当月。</li>
-     <li>请款不能跨月请款，如请四月份的款需保证3月份已请款完毕。</li>
- </ol>
-<br/>
-
-
-
-<div class="inset">
-    <hr/>
-    <strong>@facewin.com.cn</strong> Email: shiweishi@facewin.com.cn
-</div>
-</div>
-</div>
 </body>
 </html>

@@ -13,14 +13,14 @@
     <script type="text/javascript" src="js/bootstrap.js"></script>
     <script type="text/javascript" src="js/bootstrap-datepicker.js"></script>
     <script type="text/javascript" src="js/common.js"></script>
-    <title>人员变动查询</title>
+    <title>社保增减员查询</title>
 </head>
 <body>
 <div id="wrapper">
     <!-- Sidebar -->
     <div id="sidebar-wrapper">
         <ul class="sidebar-nav">
-            <li class="sidebar-brand"><a href="#">人员变动查询</a></li>
+            <li class="sidebar-brand"><a href="#">社保增减员查询</a></li>
             <li>
                 <ul class="sidebar-subnav">
                     <li><a href="index.html">返回首页</a></li>
@@ -31,7 +31,7 @@
 
     <div id="page-content-wrapper">
         <div class="content-header">
-            <h1>人员变动查询</h1>
+            <h1>社保增减员查询</h1>
         </div>
         <div style="padding: 20px;">
 
@@ -52,7 +52,7 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    <label class="col-sm-1 control-label" for="exampleInputEmail2">起始日期</label>
+                    <label class="col-sm-1 control-label" for="exampleInputEmail2">参保日期</label>
 
                     <div class="col-sm-2">
                         <input type="text" class="form-control date" id="exampleInputEmail2" placeholder=""
@@ -71,12 +71,13 @@
                     <div class="col-sm-1"></div>
                     <div class="col-sm-2">
                         <button type="submit" class="btn btn-primary">查询</button>
+                        <button type="submit" class="btn btn-primary">导出结果</button>
                     </div>
 
                 </div>
             </form>
 
-            <h3>离职人员：</h3>
+            <h3>停缴人员：</h3>
             <table class="table table-striped">
                 <thead>
                 <tr>
@@ -86,7 +87,7 @@
                     <th>商户工号</th>
                     <th>所属商户</th>
                     <th>入职日期</th>
-                    <th>离职日期</th>
+                    <th>社保停缴月</th>
                     <th>操作</th>
                 </tr>
                 </thead>
@@ -135,7 +136,7 @@
                     <th>商户工号</th>
                     <th>所属商户</th>
                     <th>入职日期</th>
-                    <th>离职日期</th>
+                    <th>社保停缴月</th>
                     <th>操作</th>
                 </tr>
                 </thead>
